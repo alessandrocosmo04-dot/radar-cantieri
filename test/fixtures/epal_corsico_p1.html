@@ -1,0 +1,1258 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="it" class="no-js">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+        Ricerca Albo</title>
+
+    <link rel="shortcut icon" href="/AlboOnline/images/faviconBlu.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="/AlboOnline/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="/AlboOnline/css/datepicker.css" type="text/css"/>
+    <link rel="stylesheet" href="/AlboOnline/css/visualizzatore.css" type="text/css"/>
+    <link rel="stylesheet" href="/AlboOnline/css/custom.css" type="text/css"/>
+    <link rel="stylesheet" href="/AlboOnline/css/mainPage.css" type="text/css"/>
+    <script src="/AlboOnline/js/jquery.min.js"></script>
+    <script src="/AlboOnline/js/bootstrap.min.js"></script>
+
+    <meta name="robots" content="noindex,nofollow"/>
+    <script type="text/javascript">
+      function checkMyData() {
+        var data_iniziale = document.getElementById('dataPubblicazioneDal').value;
+        var data_finale = document.getElementById('dataPubblicazioneAl').value;
+        if (data_iniziale == "")
+          data_iniziale = "1975-01-01";
+        if (data_finale == "")
+          data_finale = "2100-01-01";
+        var arr1 = data_iniziale.split("-");
+        var arr2 = data_finale.split("-");
+        var d1 = new Date(arr1[0], arr1[1] - 1, arr1[2]);
+        var d2 = new Date(arr2[0], arr2[1] - 1, arr2[2]);
+
+        var r1 = d1.getTime();
+        var r2 = d2.getTime();
+
+        if (r1 > r2) {
+          alert("La data di partenza è successiva a quella di arrivo!");
+          return false;
+        }
+        return true;
+      }
+    </script>
+
+    </script-->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#closeMenu').click(function () {
+          $("#menu").toggle("slide");
+          $("#myDiv").removeClass("activeMenu");
+          $("#myDiv").addClass("disableMenu");
+          $("#myDiv").removeClass("padLeftPage");
+          $(".navbar").addClass("navbar-fixed-top");
+          $("#externalLayout").removeClass("stickyExternalLayout");
+          $("#externalLayout").addClass("externalLayout");
+
+        });
+
+        $('.burgerMenu').click(function () {
+
+          $("#menu").toggle("slide");
+          $("#myDiv").addClass("activeMenu");
+          $("#myDiv").removeClass("disableMenu");
+          $("#myDiv").addClass("padLeftPage");
+          $(".navbar").removeClass("navbar-fixed-top");
+          $("#externalLayout").addClass("stickyExternalLayout");
+          $("#externalLayout").removeClass("externalLayout");
+
+        });
+      });
+
+    </script>
+    <script type="text/javascript">
+      $(document).on("scroll", function () {
+        if
+        ($(document).scrollTop() > 100) {
+          $("#preHeaderRow").addClass("shrink");
+          $("#linkRow").addClass("shrink");
+
+        } else {
+          $("#preHeaderRow").removeClass("shrink");
+          $("#linkRow").removeClass("shrink");
+        }
+      });
+    </script>
+
+
+    <!--[if lt IE 9]>
+	<script src="/AlboOnline/js/html5shiv.min.js"></script>
+	<script src="/AlboOnline/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+
+<body>
+<script type="text/javascript" src="/AlboOnline/js/info_cookies/cookiechoices.js"></script>
+<script type="text/javascript">
+    
+    cookieChoices.showCookieConsentDialog(
+        "INFORMATIVA SULL'USO DEI COOKIE - D.lg. 30 giugno 2003, n. 196, art. 13 comma 3 e art.122, comma 1. Questo sito utilizza solo Cookie tecnici di navigazione o sessione. Il sito non utilizza Cookie di profilazione e social plugin. Cliccando sul pulsante Accetto dichiari di accettare i cookie. Per saperne di piu' sull'utilizzo dei cookie o su come disabilitarli o negarli, ti invitiamo a leggere la nostra",
+        'Accetta', 'informativa', '/AlboOnline/js/info_cookies/informativa_cookies.html',
+        '/');
+    </script>
+<div id="menu" class="sideMenu">
+    <ul class="list-group">
+        <li id="closeMenu" class="list-group-item" style="cursor: pointer;"><span
+                class="glyphicon glyphicon-remove"></span></li>
+        <li id="attiPubblicati" class="list-group-item"><a class="navbar-btn"
+                                                           href="/AlboOnline/ricercaAlbo">Atti in pubblicazione</a></li>
+        </ul>
+</div>
+
+<div id="myDiv">
+    <div class="container">
+        <div class="panel">
+            <div class="row" role="banner">
+                <nav class="navbar navbar-default navbar-fixed-top my-nav">
+                    <div class="header" >
+                        <div class="preHeader row" id="preHeaderRow">
+                            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                            <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11" style="padding-top: 10px; padding-left: 32px;">
+                                <a class="linkAds" href="https://comune.corsico.mi.it/"
+                                   target="blank">Comune di Corsico</a>
+                            </div>
+                        </div>
+                        <div class="central row" id="centralRow">
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                            <div class="col-xs-1 hidden-sm hidden-md hidden-lg" style="text-align: right;">
+                                <img class="burgerMenu"  src="/AlboOnline/static/menuBurger.png" alt="Menù">
+                            </div>
+                            <div class="hidden-xs col-sm-1 col-md-1 col-lg-1 logo_container">
+								<a href="https://comune.corsico.mi.it/" target="blank"><img class="logo-img" src="/AlboOnline/static/logo.png"  style="display: block;" alt="Comune di Corsico vai al sito" ></a>
+                            </div>
+                            <div class="col-xs-1 hidden-sm hidden-md hidden-lg"></div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
+                                <div class="descrizioneEnte"><h1>Comune di Corsico</h1></div>
+                            </div>
+                            <div class="hidden-xs col-sm-8 col-md-8 col-lg-8 ">
+                                <div class="titoloAlboPretorio"><h2>Albo Pretorio</h2></div>
+                            </div>
+                        </div>
+                        <div style="height: 1px; background-color: #fff; overflow: hidden;"></div>
+
+                        </div>
+                </nav>
+            </div>
+
+            <div class="hidden-xs col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-top: 200px;"></div>
+            <div class="cols-xs-12 " style="padding-top: 150px;"></div>
+            <div class="row" role="main">
+                <div class="hidden-xs hidden-sm col-md-12 col-lg-12 col-xl-12 articolo-124 text-justify">
+                        Questa e' una bacheca virtuale per la pubblicazione degli atti amministrativi prodotti dalla Amministrazione e soggetti a pubblicazione all'Albo Pretorio ai sensi dell'art. 124 del TUEL 267/2000 e dall'art. 32 della legge 18/6/2009, n. 69.<br> L'Albo Pretorio on line e' uno strumento finalizzato ad aumentare la trasparenza nell'attivita' amministrativa, i documenti sono facilmente accessibili da ogni cittadino e quindi e' un utile strumento informatico che avvicina l'amministrazione ai cittadini.<br>Gli atti pubblicati hanno valore esclusivamente consultivo.</div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" >
+					<form id="formRicerca" role="search" class="form-horizontal" action="ricercaAlbo" method="GET" onsubmit="checkMyData();"><div class="row">
+						<div class="col-sm-12 col-md-12 col-lg-12" >
+							<label for="oggetto" class="h6_reg">Oggetto</label>
+							<input id="oggetto" name="oggetto" onkeyup="javascript:this.value=this.value.toUpperCase()" class="form-control" type="text" value=""/></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-6 col-lg-6">
+								<label class="h6_reg" for="tipoPubblicazione">Tipo pubblicazione</label>
+								<select id="tipoPubblicazione" name="tipoPubblicazione" class="form-control"><option value="" selected="selected">--</option><option value="DECRETO SINDACALE">DECRETO SINDACALE</option><option value="DETERMINAZIONE DIRIGENZIALE CON IMPEGNO DI SPESA">DETERMINAZIONE DIRIGENZIALE CON IMPEGNO DI SPESA</option><option value="DETERMINAZIONE DIRIGENZIALE SENZA IMPEGNO DI SPESA">DETERMINAZIONE DIRIGENZIALE SENZA IMPEGNO DI SPESA</option><option value="ORDINANZA DIRIGENZIALE">ORDINANZA DIRIGENZIALE</option><option value="PUBBLICAZIONE ATTO DI MATRIMONIO">PUBBLICAZIONE ATTO DI MATRIMONIO</option><option value="REGISTRO DELLE DELIBERE">REGISTRO DELLE DELIBERE</option></select></div>
+						<div class="col-sm-6 col-md-6 col-lg-6">
+								<label class="h6_reg" for="settoreProponente">Settore proponente</label>
+								<select id="settoreProponente" name="settoreProponente" class="form-control"><option value="" selected="selected">--</option><option value="AFFARI GENERALI E FISCALITA&#39;">AFFARI GENERALI E FISCALITA&#39;</option><option value="CORPO POLIZIA LOCALE">CORPO POLIZIA LOCALE</option><option value="CULTURA E PATRIMONIO">CULTURA E PATRIMONIO</option><option value="FINANZIARIO E RISORSE UMANE">FINANZIARIO E RISORSE UMANE</option><option value="LAVORI PUBBLICI E TERRITORIO">LAVORI PUBBLICI E TERRITORIO</option><option value="SEGRETERIA AMMINISTRATIVA POLIZIA LOCALE">SEGRETERIA AMMINISTRATIVA POLIZIA LOCALE</option><option value="SEGRETERIA GENERALE E URP">SEGRETERIA GENERALE E URP</option><option value="SERVIZI INNOVAZIONE DIGITALE E TECNOLOGIA">SERVIZI INNOVAZIONE DIGITALE E TECNOLOGIA</option><option value="SOCIALE E ISTRUZIONE">SOCIALE E ISTRUZIONE</option><option value="STATO CIVILE ED ELETTORALE">STATO CIVILE ED ELETTORALE</option><option value="TUTELA AMBIENTALE E PROTEZIONE CIVILE">TUTELA AMBIENTALE E PROTEZIONE CIVILE</option></select></div>
+						</div>
+
+					<div class="bordo-spazio">
+							<div class="row bordo-registro">
+
+								<div class="col-sm-2 col-md-2 col-lg-2 " >
+									<label class="h6_reg" for="daNumeroReg">Numero da</label>
+									<input id="daNumeroReg" name="daNumeroReg" min="1" type="number" class="form-control " value=""/></div>
+								<div class="col-sm-2 col-md-2 col-lg-2 " >
+									<label class="h6_reg" for="aNumeroReg">a</label>
+									<input id="aNumeroReg" name="aNumeroReg" min="1" type="number" class="form-control " value=""/></div>
+								<div class="col-sm-2 col-md-2 col-lg-2 " >
+									<label class="h6_reg" for="annoReg">Anno</label>
+									<input id="annoReg" name="annoReg" min="1" type="number" class="form-control " value=""/></div>
+
+								<div class="col-sm-6 col-md-6 col-lg-6 " >
+									<label class="h6_reg" for="tipoRegistro">Registro</label>
+									<select id="tipoRegistro" name="tipoRegistro" class="form-control"><option value="" selected="selected">--</option><option value="DECR">DECRETI SINDACALI</option><option value="DELG">DELIBERE DI GIUNTA</option><option value="DETE">DETERMINAZIONI DIRIGENZIALI</option><option value="ORDD">ORDINANZE DIRIGENZIALI</option><option value="PRO">PROTOCOLLO GENERALE</option></select></div>
+
+
+							</div>
+						</div>
+					<div class="row"  >
+
+						<div class="col-sm-2 col-md-2 col-lg-2">
+							<label class="h6_reg" for="dataPubblicazioneDal">Data pubblicazione dal</label>
+							<input id="dataPubblicazioneDal" name="dataPubblicazioneDal" data-date-format="dd/mm/yyyy" placeholder="gg/mm/aaaa" type="date" class="form-control" value=""/></div>
+
+						<div class="col-sm-2 col-md-2 col-lg-2">
+							<label class="h6_reg" for="dataPubblicazioneAl">al</label>
+							<input id="dataPubblicazioneAl" name="dataPubblicazioneAl" data-date-format="dd/mm/yyyy" placeholder="gg/mm/aaaa" type="date" class="form-control" value=""/></div>
+						<div class="col-sm-2 col-md-2 col-lg-2">
+								<label class="h6_reg" for="daNumero">Numero da</label>
+								<input id="daNumero" name="daNumero" min="1" type="number" class="form-control " value=""/></div>
+							<div class="col-sm-2 col-md-2 col-lg-2">
+								<label class="h6_reg" for="aNumero">a</label>
+								<input id="aNumero" name="aNumero" min="1" type="number" class="form-control" value=""/><!--onkeyup="javascript:this.value=this.value.replace(/[^0-9]/g, '');" -->
+							</div>
+						<div class="col-sm-2 col-md-2 col-lg-2  col-sm-offset-2 col-md-offset-2 col-lg-offset-2 text-center" >
+							<input id="page" name="page" type="hidden" value="1" value="1"/><p>&nbsp;</p>
+							<input type="submit" value="Cerca" id="frmSubmit" class="btn  btn-block cerca"   />
+						</div>
+					</div>
+				</div>
+
+				</form></div>
+		</div>
+
+		<div class="row risultati-ricerca">
+			<div class="col-sm-12 col-md-12 col-lg-12 text-center">
+		<ul class="pagination justify-content-center pagination-lg ">
+				<li class="active"><span >1</span></li>
+					<li><a href="/AlboOnline/ricercaAlbo?page=1&page=2" class="step">2</a></li>
+					<li><a href="/AlboOnline/ricercaAlbo?page=1&page=3" class="step">3</a></li>
+					<li><a href="/AlboOnline/ricercaAlbo?page=1&page=4" class="step">4</a></li>
+					<li><a href="/AlboOnline/ricercaAlbo?page=1&amp;page=2" class="prevLink" data-toggle="tooltip" data-placement="top" title="Successivo"><span aria-hidden="false">&rarr;</span></a></li>
+					</ul>
+		</div><div class="col-sm-12 col-md-12 col-lg-12 ricerca">
+				
+
+
+
+
+
+
+
+
+
+
+<div class="container" style="border:solir;">
+	 Trovati 97 documenti
+	
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1797/2026
+					<div class="">Oggetto:  REGOLAMENTAZIONE DELLA CIRCOLAZIONE STRADALE - DIVIETO DI SOSTA CON RIMOZIONE, RESTRINGIMENTO DI CARREGGIATA, PER RIPRISTINO TAPPETINI STRADALI A SEGUITO DI SCAVI PER POSA LINEA WINDTRE NELLE STRADE: VIA M. POLO, VIA L. DA VINCI, VIA COLOMBO, VIA SELLA E VIA MONFERRATO, DALLE ORE 08:00 ALLE ORE 18:00 DAL GIORNO 30 NOVEMBRE AL 5 DICEMBRE 2026.</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 26/11/2026 &nbsp;al  11/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > ORDINANZE DIRIGENZIALI 316/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">26/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">ORDINANZA DIRIGENZIALE</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">CORPO POLIZIA LOCALE</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7891027">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1796/2026
+					<div class="">Oggetto:  NOMINA DELLA COMMISSIONE ESAMINATRICE DEL BANDO DI CONCORSO PUBBLICO PER ESAMI, PER LA COPERTURA A TEMPO PIENO E INDETERMINATO DI N. 2 POSTI DI FUNZIONARIO TECNICO, AREA DEI FUNZIONARI ED ELEVATE QUALIFICAZIONI CON RISERVA DI N.1 POSTO AI SENSI DELL'ART. 18, COMMA 4, DEL D.LGS. 40/2017.</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 25/11/2026 &nbsp;al  10/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 981/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">25/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE SENZA IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">FINANZIARIO E RISORSE UMANE</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7887186">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1795/2026
+					<div class="">Oggetto:  DETERMINAZIONE IN MERITO ALL'ASSUNZIONE A TEMPO DETERMINATO AI SENSI DELL'ART. 110, COMMA 1, DEL D.LGS. N. 267/2000, PER LA DIREZIONE DEL SETTORE 4 - AMBIENTE ED EFFICIENZA ENERGETICA</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 972/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE CON IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">FINANZIARIO E RISORSE UMANE</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7883916">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1794/2026
+					<div class="">Oggetto:  IMPEGNO DI SPESA PER SPESE CONDOMINIALI CONDOMINI CENTRO COMMERCIALE FALCONE E BOX PIAZZA PRIMO MAGGIO PER COMPLESSIVI € 6.131,79</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 974/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE CON IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">CULTURA E PATRIMONIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7883907">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1793/2026
+					<div class="">Oggetto:  IMPEGNO DI SPESA DI EURO 44.000,00= IVA 5% E SPESE VARIE INCLUSE PER IL COLLOCAMENTO DI UN MINORE STRANIERO NON ACCOMPAGNATO PRESSO UNA COMUNITÀ EDUCATIVA . ANNUALITA' 2027. CIG: BDECFB5967</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 973/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE CON IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">SOCIALE E ISTRUZIONE</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7883900">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1792/2026
+					<div class="">Oggetto:  LAVORI DI RISANAMENTO CONSERVATIVO DEGLI IMPALCATI DEI CAVALCAVIA DI VIALE LIBERAZIONE - CUP G59J20000340003 - CIG A030FCAFC44. DITTA GIUDICI S.P.A. - APPROVAZIONE STATO FINALE DEI LAVORI E CRE</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 975/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE CON IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">LAVORI PUBBLICI E TERRITORIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7883897">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1791/2026
+					<div class="">Oggetto:  ACCERTAMENTO DI ENTRATA RELATIVO ALLA LIQUIDAZIONE DELL'INDENNITÀ INAIL PER L'INFORTUNIO DI UN DIPENDENTE</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 971/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE CON IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">FINANZIARIO E RISORSE UMANE</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7883887">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1790/2026
+					<div class="">Oggetto:  INTERVENTI DI MANUTENZIONE STRAORDINARIA RELATIVI ALLA MICRO PISCINA UBICATA ALL'INTERNO DEL COMPLESSO SCOLASTICO SITO A CORSICO IN VIA SALMA - CIG B7B2309353 - CUP G52H25000120004 - APPROVAZIONE STATO FINALE DEI LAVORI E CRE.</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 977/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE CON IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">LAVORI PUBBLICI E TERRITORIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7883881">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1789/2026
+					<div class="">Oggetto:  CONCESSIONE DI CONTRIBUTI ECONOMICI A FAVORE DI SOGGETTI IN STATO DI BISOGNO. IMPEGNO DI SPESA DI EURO 1.800,00.</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 966/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE CON IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">SOCIALE E ISTRUZIONE</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7883876">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1788/2026
+					<div class="">Oggetto:  AFFIDAMENTO DIRETTO AI SENSI DELL'ART. 50 COMMA 1 LETTERA B) DEL D.LGS 36/2023 RELATIVO AL SERVIZIO IN ABBONAMENTO BANCA DATI ACI-PRA E AI SERVIZI DI BASE ANCI RISPONDE - ANNUALITÀ 2027 - COD. CIG.: BDC24EF822  </div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 965/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE CON IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">SEGRETERIA AMMINISTRATIVA POLIZIA LOCALE</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7883873">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1787/2026
+					<div class="">Oggetto:  RIMBORSI DIRITTI SUAP VERSATI ERRONEAMENTE 2025-2026</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 979/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE CON IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">LAVORI PUBBLICI E TERRITORIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7883868">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1786/2026
+					<div class="">Oggetto:  ACCERTAMENTO DI ENTRATA PER SALDI CORRISPETTIVO RISCATTO DIRITTO DI SUPERFICIE BOX VIA MONTELLO N. 13 PER € 4.485,24 - ROGITI 11.11.2026</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 976/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE CON IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">CULTURA E PATRIMONIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7883863">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1785/2026
+					<div class="">Oggetto:  REGOLAMENTAZIONE DELLA CIRCOLAZIONE STRADALE - DIVIETO DI SOSTA CON RIMOZIONE, IN VIA CONCORDIA CIVICO 1, IL GIORNO 27 NOVEMBRE 2026, DALLE ORE 17:00 ALLE ORE 24:00. </div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > ORDINANZE DIRIGENZIALI 315/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">ORDINANZA DIRIGENZIALE</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">CORPO POLIZIA LOCALE</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7882627">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1784/2026
+					<div class="">Oggetto:  AVVISO DI DEPOSITO DI ATTI NELLA CASA DEL COMUNE ELENCO N 1 PER 24 ATTI DA PUBBLICARE ALL'ALBO DAL 25/11/2026 AL 26/11/2026</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 25/11/2026 &nbsp;al  26/11/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > PROTOCOLLO GENERALE 40093/2026</div>
+					
+					
+					
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Ente Richiedente: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">AGENZIA DELLE ENTRATE - RISCOSSIONE</div>
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7882572">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1783/2026
+					<div class="">Oggetto:  NOMINA DELLA COMMISSIONE GIUDICATRICE PER LA CONCESSIONE DI VALORIZZAZIONE DEL BENE IMMOBILE DI PROPRIETÀ DEL COMUNE DI CORSICO SITUATO IN VIA COPERNICO 67</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 980/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE SENZA IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">CULTURA E PATRIMONIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7882235">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1782/2026
+					<div class="">Oggetto:  COMUNICAZIONE AVVIO DEL PROCEDIMENTO DI DECADENZA DEL POSTEGGIO SU AREE PUBBLICHE, AI SENSI DELL' ART.7 DELLA L.241/1990 CON LA MODALITA' DI CUI ALL' ART. 8 COMMA 3 STESSA LEGGE</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > ORDINANZE DIRIGENZIALI 314/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">ORDINANZA DIRIGENZIALE</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">LAVORI PUBBLICI E TERRITORIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7882234">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1781/2026
+					<div class="">Oggetto:  COMUNICAZIONE AVVIO DEL PROCEDIMENTO DI DECADENZA DEL POSTEGGIO SU AREE PUBBLICHE, AI SENSI DELL' ART.7 DELLA L.241/1990 CON LA MODALITA' DI CUI ALL' ART. 8 COMMA 3 STESSA LEGGE
+
+</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > ORDINANZE DIRIGENZIALI 313/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">ORDINANZA DIRIGENZIALE</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">LAVORI PUBBLICI E TERRITORIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7882233">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1780/2026
+					<div class="">Oggetto:  COMUNICAZIONE AVVIO DEL PROCEDIMENTO DI DECADENZA DEL POSTEGGIO SU AREE PUBBLICHE, AI SENSI DELL' ART.7 DELLA L.241/1990 CON LA MODALITA' DI CUI ALL' ART. 8 COMMA 3 STESSA LEGGE</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > ORDINANZE DIRIGENZIALI 312/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">ORDINANZA DIRIGENZIALE</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">LAVORI PUBBLICI E TERRITORIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7882232">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1779/2026
+					<div class="">Oggetto:  COMUNICAZIONE AVVIO DEL PROCEDIMENTO DI DECADENZA DEL POSTEGGIO SU AREE PUBBLICHE, AI SENSI DELL' ART.7 DELLA L.241/1990 CON LA MODALITA' DI CUI ALL' ART. 8 COMMA 3 STESSA LEGGE</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > ORDINANZE DIRIGENZIALI 311/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">ORDINANZA DIRIGENZIALE</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">LAVORI PUBBLICI E TERRITORIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7882231">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1778/2026
+					<div class="">Oggetto:  COMUNICAZIONE AVVIO DEL PROCEDIMENTO DI DECADENZA DEL POSTEGGIO SU AREE PUBBLICHE, AI SENSI DELL' ART.7 DELLA L.241/1990 CON LA MODALITA' DI CUI ALL' ART. 8 COMMA 3 STESSA LEGGE</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > ORDINANZE DIRIGENZIALI 310/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">ORDINANZA DIRIGENZIALE</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">LAVORI PUBBLICI E TERRITORIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7882230">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1777/2026
+					<div class="">Oggetto:  COMUNICAZIONE AVVIO DEL PROCEDIMENTO DI DECADENZA DEL POSTEGGIO SU AREE PUBBLICHE, AI SENSI DELL' ART.7 DELLA L.241/1990 CON LA MODALITA' DI CUI ALL' ART. 8 COMMA 3 STESSA LEGGE</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > ORDINANZE DIRIGENZIALI 309/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">ORDINANZA DIRIGENZIALE</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">LAVORI PUBBLICI E TERRITORIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7882229">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1776/2026
+					<div class="">Oggetto:  RICOGNIZIONE ENTRATE PATRIMONIALI PER RISCATTO DIRITTI DI SUPERFICIE GIUGNO - OTTOBRE 2026 PER € 1.524,25</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 978/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE SENZA IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">CULTURA E PATRIMONIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7882228">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1775/2026
+					<div class="">Oggetto:  COMUNICAZIONE AVVIO DEL PROCEDIMENTO DI DECADENZA DEL POSTEGGIO SU AREE PUBBLICHE, AI SENSI DELL' ART.7 DELLA L.241/1990 CON LA MODALITA' DI CUI ALL' ART. 8 COMMA 3 STESSA LEGGE</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 24/11/2026 &nbsp;al  09/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > ORDINANZE DIRIGENZIALI 308/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">24/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">ORDINANZA DIRIGENZIALE</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">LAVORI PUBBLICI E TERRITORIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7882226">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1774/2026
+					<div class="">Oggetto:  AVVISO DI DEPOSITO 	
+AI SENSI DELL'ART.60 -DPR 600 DEL 29/09/1973 N.600	
+</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 20/11/2026 &nbsp;al  27/11/2026</div>
+					
+					
+					
+					
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Ente Richiedente: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">AGENZIA DELLE ENTRATE</div>
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7874299">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1773/2026
+					<div class="">Oggetto:  PIANO ESECUTIVO DI GESTIONE 2026/2028 - 5° VARIAZIONE</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 20/11/2026 &nbsp;al  05/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DELIBERE DI GIUNTA 119/2026</div>
+					
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">REGISTRO DELLE DELIBERE</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">FINANZIARIO E RISORSE UMANE</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7874234">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1772/2026
+					<div class="">Oggetto:  AGGIORNAMENTO AL DOCUMENTO UNICO DI PROGRAMMAZIONE (DUP) 2026/2028</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 20/11/2026 &nbsp;al  05/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DELIBERE DI GIUNTA 120/2026</div>
+					
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">REGISTRO DELLE DELIBERE</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">FINANZIARIO E RISORSE UMANE</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7874228">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1771/2026
+					<div class="">Oggetto:  APPROVAZIONE SCHEMA DOCUMENTO UNICO DI PROGRAMMAZIONE (DUP) 2027/2029.</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 20/11/2026 &nbsp;al  05/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DELIBERE DI GIUNTA 121/2026</div>
+					
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">REGISTRO DELLE DELIBERE</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">FINANZIARIO E RISORSE UMANE</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7874214">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1770/2026
+					<div class="">Oggetto:  CESSIONE AREE P.E.E.P. - TRASFORMAZIONE DEL DIRITTO DI SUPERFICIE IN DIRITTO DI PROPRIETÀ - DETERMINAZIONE DEL CORRISPETTIVO DI RISCATTO </div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 20/11/2026 &nbsp;al  05/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 970/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">20/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE SENZA IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">CULTURA E PATRIMONIO</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7874162">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1769/2026
+					<div class="">Oggetto:  AFFIDAMENTO DIRETTO AI SENSI DELL'ART. 50 COMMA 1 LETTERA B) DEL D. LGS 36/2023 RELATIVO ALL'ABBONAMENTO PER L'ANNO 2027 AL PRONTUARIO DELLE VIOLAZIONI ALLA CIRCOLAZIONE STRADALE E RELATIVA APP PER SMARTPHONE E TABLET - CPV 22000000-0 - CIG BDD8C2BB39</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 20/11/2026 &nbsp;al  05/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 967/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">20/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE CON IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">SEGRETERIA AMMINISTRATIVA POLIZIA LOCALE</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7873153">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="row">
+
+			<div class="panel panel-primary">
+
+					
+					
+					
+
+				<div class="panel-heading titolo-albo" tabindex="0">
+					Registrazione Albo n.   1768/2026
+					<div class="">Oggetto:  CENTRI ESTIVI COMUNALI 2026 - ACCERTAMENTO DELLE ENTRATE DERIVANTI DA RETTE DI FREQUENZA E MENSA</div>
+				</div>
+				<div class="panel-body" tabindex="0">
+					
+					<div class="col-sm-12 col-md-12 col-lg-12">Documento in Pubblicazione dal 20/11/2026 &nbsp;al  05/12/2026</div>
+					
+					
+						<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Atto di Riferimento: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9" > DETERMINAZIONI DIRIGENZIALI 962/2026</div>
+					
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Data Esecutivita': </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">20/11/2026</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Tipo pubblicazione: </div><div class="testata-dati  col-sm-9 col-md-9 col-lg-9">DETERMINAZIONE DIRIGENZIALE CON IMPEGNO DI SPESA</div>
+					<div class="testata-etichetta col-sm-3 col-md-3 col-lg-3">Settore Proponente: </div><div class="testata-dati col-sm-9 col-md-9 col-lg-9">SOCIALE E ISTRUZIONE</div>
+					
+
+				</div>
+				<div class="panel-footer">
+					<a class="dettaglio-doc" href="dettaglioAlbo/7873129">Visualizza dettaglio </a>
+				</div>
+			</div>
+		</div>
+
+	
+
+</div>
+<div class="col-sm-12 col-md-12 col-lg-12 text-center">
+		<ul class="pagination justify-content-center pagination-lg ">
+				<li class="active"><span >1</span></li>
+					<li><a href="/AlboOnline/ricercaAlbo?page=1&page=2" class="step">2</a></li>
+					<li><a href="/AlboOnline/ricercaAlbo?page=1&page=3" class="step">3</a></li>
+					<li><a href="/AlboOnline/ricercaAlbo?page=1&page=4" class="step">4</a></li>
+					<li><a href="/AlboOnline/ricercaAlbo?page=1&amp;page=2" class="prevLink" data-toggle="tooltip" data-placement="top" title="Successivo"><span aria-hidden="false">&rarr;</span></a></li>
+					</ul>
+		</div></div>
+		</div>
+		</div>
+	</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footerPage col-md-12" role="contentinfo">
+        <div class="row">
+            <div class="hidden-xs col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 logo_container">
+				<a href="https://comune.corsico.mi.it/" target="blank"><img class="logo-img" src="/AlboOnline/static/logoBN.png" style="display: block;" alt="Comune di Corsico vai sul sito" ></a>
+            </div>
+            <div class="col-xs-1 hidden-sm hidden-md hidden-lg"></div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
+                <div class="titleFooter">Comune di Corsico</div>
+            </div>
+            </div>
+        <div class="row">
+        <!--%
+            ApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(application);
+            ResourceLoader resourceLoader = ctx.getBean(ResourceLoader.class);
+        %-->
+			</div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"  style="padding-top: 2%;padding-bottom: 2%;text-align: center;">
+            AGSME V1.5.5.0
+        </div>
+    </div>
+</div>
+
+<script src="/AlboOnline/js/datepicker.js"></script>
+<script type="text/javascript">$('.datepicker').datepicker({weekStart: 1}).on('changeDate', function (ev) {
+  $(this).datepicker('hide')
+})</script>
+
+</body>
+</html>

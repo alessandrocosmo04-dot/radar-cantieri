@@ -1,0 +1,51 @@
+# Giro giornaliero del radar cantieri su GitHub Actions (gratis).
+# Usare un repository PRIVATO: i dati raccolti restano visibili solo al proprietario.
+name: radar-giornaliero
+
+on:
+  schedule:
+    - cron: "15 5 * * *"   # ogni giorno alle 05:15 UTC (06:15 ora italiana d'inverno)
+  workflow_dispatch:        # avvio a mano dal tab Actions
+    inputs:
+      giorni:
+        description: "Giorni da rileggere"
+        default: "20"
+
+permissions:
+  contents: write           # serve per salvare l'archivio aggiornato nel repository
+
+concurrency:
+  group: radar
+  cancel-in-progress: false
+
+jobs:
+  raccogli:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test (nessuna richiesta di rete)
+        run: python3 -m unittest discover -s test
+      - name: Mappa automatica degli albi (la prima volta e poi ogni lunedi')
+        run: |
+          if [ ! -f mappa_albi.csv ] || [ "$(date -u +%u)" = "1" ]; then python3 radar.py scopri; fi
+      - name: Controllo raggiungibilita' degli albi
+        run: python3 radar.py prova
+      - name: Raccolta
+        run: python3 radar.py raccogli "${{ github.event.inputs.giorni || '20' }}"
+      - name: Salva archivio ed export
+        run: |
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add dati/ mappa_albi.csv 2>/dev/null || git add dati/
+          git diff --cached --quiet || git commit -m "giro $(date -u +%F)"
+          git push
+      - name: Export del giorno come file scaricabile
+        uses: actions/upload-artifact@v4
+        with:
+          name: radar-${{ github.run_id }}
+          path: dati/*.csv
+          retention-days: 30
