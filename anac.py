@@ -108,7 +108,11 @@ def _apri(url, timeout=120):
 def api(azione, **par):
     q = "&".join(f"{k}={v}" for k, v in par.items())
     with _apri(f"{API}{azione}?{q}") as r:
-        return json.load(r)["result"]
+        grezzo, tipo, stato = r.read(), r.headers.get("content-type"), r.status
+    try:
+        return json.loads(grezzo)["result"]
+    except ValueError:
+        raise RuntimeError(f"il catalogo ANAC non ha risposto in JSON (HTTP {stato}, {tipo}): {grezzo[:300]!r}")
 
 
 def scarica(url, dest, tentativi=4):
