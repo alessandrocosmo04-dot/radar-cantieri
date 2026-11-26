@@ -4,7 +4,7 @@ Ogni connettore espone  leggi(url_albo, dal: date) -> lista di atti normalizzati
   {comune, piattaforma, id, registro, categoria, sottocategoria, oggetto, inizio_pubbl, fine_pubbl, url}
 Solo libreria standard.
 """
-import datetime as dt, html, http.cookiejar, re, time, urllib.error, urllib.parse, urllib.request
+import datetime as dt, html, http.client, http.cookiejar, re, time, urllib.error, urllib.parse, urllib.request
 
 UA = "Mozilla/5.0 (X11; Linux x86_64) RadarCantieri/0.2 (raccolta albo pretorio; pausa 1s fra le richieste)"
 PAUSA = 1.0  # secondi fra una richiesta e l'altra: siamo ospiti sui server dei comuni
@@ -23,16 +23,16 @@ def get(op, url, data=None):
     for tentativo in (1, 2):  # un secondo tentativo per i siti lenti o che chiudono la connessione
         try:
             with op.open(url, data=body, timeout=60) as r:
-                grezzo, cs = r.read(), r.headers.get_content_charset()
+                grezzo, cs, finale = r.read(), r.headers.get_content_charset(), r.geturl()
             break
-        except (ConnectionError, TimeoutError, urllib.error.URLError) as e:
+        except (ConnectionError, TimeoutError, http.client.IncompleteRead, urllib.error.URLError) as e:
             if tentativo == 2 or isinstance(e, urllib.error.HTTPError):
                 raise
             time.sleep(5)
-        try:
-            return grezzo.decode(cs or "utf-8"), r.geturl()
-        except (UnicodeDecodeError, LookupError):
-            return grezzo.decode("cp1252", "replace"), r.geturl()
+    try:
+        return grezzo.decode(cs or "utf-8"), finale
+    except (UnicodeDecodeError, LookupError):
+        return grezzo.decode("cp1252", "replace"), finale
 
 
 def testo(s):

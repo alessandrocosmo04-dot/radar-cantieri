@@ -44,7 +44,13 @@ jobs:
           git diff --cached --quiet || git commit -m "giro $(date -u +%F)"
           git pull --rebase -X theirs origin main   # se nel frattempo il codice e' stato aggiornato
           git push
+      - name: Allarme se piu' di meta' dei comuni e' in errore
+        run: |
+          read errori totale < dati/ultimo_giro.txt
+          echo "$errori comuni in errore su $totale"
+          [ $((errori * 2)) -le "$totale" ]
       - name: Export del giorno come file scaricabile
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: radar-${{ github.run_id }}

@@ -163,6 +163,10 @@ if __name__ == "__main__":
         prova()
     elif cmd == "raccogli":
         errori = raccogli(int(sys.argv[2]) if len(sys.argv) > 2 else 30)
-        sys.exit(0)  # gli errori dei singoli comuni stanno nella tabella letture
+        # gli errori dei singoli comuni stanno nella tabella letture; qui solo il riepilogo
+        # che il workflow controlla dopo aver salvato l'archivio
+        with open(os.path.join("dati", "ultimo_giro.txt"), "w") as f:
+            f.write(f"{errori} {len(mappa())}\n")
+        sys.exit(0)
     else:
         print(__doc__)
