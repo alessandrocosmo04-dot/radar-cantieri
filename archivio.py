@@ -101,6 +101,8 @@ def riclassifica(db, classifica, oggi=None):
             _versiona(db, chiave, {}, oggi, "scartato")
             sca += 1
             continue
+        if k.get("oggetto") and k["oggetto"] != r["oggetto"]:  # oscuramenti migliorati: il testo salvato si aggiorna
+            db.execute("UPDATE segnali SET oggetto=? WHERE istat=? AND piattaforma=? AND id=?", (k["oggetto"], *chiave))
         valori = {c: _testo(k.get(c)) for c in VERSIONATI}
         if any(valori[c] != r[c] for c in VERSIONATI):
             db.execute(f"UPDATE segnali SET {', '.join(c + '=?' for c in VERSIONATI)} WHERE istat=? AND piattaforma=? AND id=?",

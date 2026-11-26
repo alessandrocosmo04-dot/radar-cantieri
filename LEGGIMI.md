@@ -18,3 +18,12 @@ L'albo mostra solo gli atti in pubblicazione (circa 15 giorni): lanciandolo ogni
 Richiede Python 3.9+, nessuna libreria. Pausa di 1 secondo fra le richieste per non pesare sui siti dei comuni.
 
 `campione/`: primo campione di atti veri e risultato del classificatore.
+
+
+## Dal radar al prodotto (dati vendibili)
+
+- `anac.py`: incrocio con gli open data ANAC (appalti, aggiudicazioni, imprese vincitrici con partita IVA, attestazioni SOA), solo provincia di Milano e lavori. Giro mensile in `.github/workflows/anac.yml`.
+- `imprese.py`: anagrafica unica delle imprese (partita IVA verificata, nomi normalizzati, abbinamento con confidenza calibrata).
+- `prodotto.py`: opere per CUP/CIG con fasi, cantieri, imprese e indicatori per comune; `--al AAAA-MM-GG` ricostruisce il prodotto come era quel giorno (nessun look-ahead); `--campione cartella` esporta i CSV e i controlli di qualita'.
+- `valutazione/`: campioni etichettati a mano e `valuta.py` per precisione e richiamo con intervalli di confidenza.
+- Archivio: la tabella `versioni` conserva la storia point-in-time di ogni segnale.

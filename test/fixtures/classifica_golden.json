@@ -358,7 +358,7 @@
   "atteso": {
    "tipo": "opera_pubblica",
    "fase": "esecuzione",
-   "impresa": "GF STRADE"
+   "impresa": null
   }
  },
  {
@@ -1680,7 +1680,7 @@
   "atteso": {
    "tipo": "opera_pubblica",
    "fase": "affidamento",
-   "impresa": "F.LLI SCOTTI LAVORI EDILI DI CINISELLO BALSAMO"
+   "impresa": null
   }
  },
  {

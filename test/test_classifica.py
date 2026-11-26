@@ -50,7 +50,12 @@ class TestCasi(unittest.TestCase):
 
     def test_impresa(self):
         self.assertEqual(c("AFFIDAMENTO DEI LAVORI DI ASFALTATURA ALLA DITTA BIANCHI STRADE SRL - CIG A1B2C3D4E5")["impresa"], "BIANCHI STRADE SRL")
-        self.assertEqual(c("AFFIDAMENTO ALLA DITTA F.LLI VERDI DEI LAVORI DI MANUTENZIONE STRAORDINARIA COPERTURA")["impresa"], "F.LLI VERDI")
+        # senza forma societaria puo' essere una ditta individuale col nome di una persona: non si tiene
+        self.assertIsNone(c("AFFIDAMENTO ALLA DITTA F.LLI VERDI DEI LAVORI DI MANUTENZIONE STRAORDINARIA COPERTURA")["impresa"])
+        self.assertIsNone(c("AFFIDAMENTO ALLA DITTA PAVESI SERRAMENTI DI PAVESI FABIO DEI LAVORI DI MANUTENZIONE STRAORDINARIA")["impresa"])
+        # ruoli e frammenti di frase tolti, piattaforme e finanziatori non sono imprese esecutrici
+        self.assertEqual(c("LAVORI DI ASFALTATURA - APPALTATORE CASALUCCI S.R.L - SAL N. 2")["impresa"], "CASALUCCI S.R.L")
+        self.assertIsNone(c("AFFIDAMENTO DIRETTO DEI LAVORI DI MANUTENZIONE STRAORDINARIA MEDIANTE LA PIATTAFORMA SINTEL DI ARIA S.P.A.")["impresa"])
 
     def test_codici(self):
         r = c("LAVORI DI RIFACIMENTO COPERTURA - CUP E62B26000380004 - CIG BDAAE6A7EE - IMPORTO € 125.000,00")

@@ -36,6 +36,8 @@ jobs:
         run: python3 radar.py prova
       - name: Raccolta
         run: python3 radar.py raccogli "${{ github.event.inputs.giorni || '20' }}"
+      - name: Prodotto (opere, imprese, cantieri, indicatori) e controlli di qualita'
+        run: python3 prodotto.py --campione dati/campione
       - name: Salva archivio ed export
         run: |
           git config user.name "radar-bot"
@@ -54,5 +56,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: radar-${{ github.run_id }}
-          path: dati/*.csv
+          path: |
+            dati/*.csv
+            dati/campione/
           retention-days: 30

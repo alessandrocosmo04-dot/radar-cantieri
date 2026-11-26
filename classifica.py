@@ -60,12 +60,43 @@ TAGLIO = re.compile(r".*(?:[\-–,:;(\"“”'’]|\bOPERATORE ECONOMICO\b|\bIMP
 DITTA = re.compile(r"\b(?:ALLA DITTA|ALL['’]IMPRESA|DITTA|IMPRESA)\s+(.+?)(?=\s+(?:DEI|DEL|DELLA|DELLE|PER|DI CUI|RELATIV\w*|CON SEDE|P\.?\s?IVA)\b|\s*[-,–(;:]|\.?$)", re.I)
 
 
+RUOLO_IN_TESTA = re.compile(r"^(?:(?:APPALTATORE|CAPOGRUPPO|MANDATARIA|MANDANTE|OPERATORE( ECONOMICO)?|INCARICO|AGGIUDICATARI[AO]|"
+                            r"SOC\.?|SOCIET[AÀ]'?|DITTA|IMPRESA|\[PRIVATO\])\s+)+", re.I)
+NON_IMPRESA = re.compile(r"\b(CIG|CUP|PIATTAFORMA|SINTEL|CASSA DEPOSITI|MUTUO|COME DA)\b|\bVIA\b.*\bSNC$|^LAVORI\b", re.I)
+
+
+def _pulisci_nome(nome):
+    """Toglie ruoli e frammenti di frase dal nome estratto; None se non e' il nome di un'impresa."""
+    nome = re.split(r"(?<=[A-Za-zÀ-ú]{4})\.\s+", nome)[-1]  # "TERRITORIO COMUNALE. COOPERATIVA X" -> "COOPERATIVA X"
+    nome = re.split(r"\s+ED?\s+(?=[A-Z0-9])", nome)[-1] if " ED " in nome else nome
+    nome = RUOLO_IN_TESTA.sub("", nome).strip(" .,;:()")
+    if NON_IMPRESA.search(nome) or len(nome) < 4 or not re.search(r"[A-Z]{2}", nome.upper()):
+        return None
+    return nome
+
+
+DITTA_NOME = re.compile(r"\b(?:ALLA DITTA|ALL['’]IMPRESA|DITTA|IMPRESA(?: INDIVIDUALE)?|OPERATORE ECONOMICO)\s+"
+                        r"(?!(?:PER|AI|AL|ALLA|NELL\w*|RELATIV\w*|DI|DEL|DELLA|AGGIUDICATARI\w*|ESECUTRIC\w*|APPALTATRIC\w*|INDIVIDUATO|SELEZIONATO|AI SENSI)\b)"
+                        r"([A-Z0-9][^,;:()\-–\"“”]{1,60}?)(?=\s+(?:DEI|DEL|DELLA|DELLE|PER|DI CUI|RELATIV\w*|CON SEDE|P\.?\s?IVA|C\.?F\.?|NELL\w*|AI SENSI|CIG|CUP|ORDINANZA|DETERMINA|LAVORI|INTERVENTI|OPERE|SERVIZIO|FORNITURA)\b|\s*[-,–(;:]|\.?\s*$|\.\s)")
+
+
+def oscura_ditte(ogg):
+    """Le imprese nominate senza forma societaria possono essere ditte individuali (nome e cognome di una persona):
+    nel testo le sostituiamo con [impresa]. Le societa' (SRL, SPA, SNC, SAS, cooperative) restano."""
+    def sost(m):
+        nome = m.group(1)
+        seguito = re.split(r"[,;:()\-–]", ogg[m.end(1):m.end(1) + 60])[0]  # "COMPAGNIA EDILIZIA" + " DELLA BRIANZA SRL"
+        if SUFFISSO.search(nome) or SUFFISSO.search(seguito) or nome.startswith("["):
+            return m.group(0)
+        return m.group(0).replace(nome, "[impresa]")
+    return DITTA_NOME.sub(sost, ogg)
+
+
 def impresa(ogg):
+    """Nome dell'impresa, solo se ha una forma societaria (SRL, SPA, SNC, SAS, cooperativa). Senza forma societaria
+    spesso e' una ditta individuale col nome di una persona: per la privacy non la teniamo."""
     m = SUFFISSO.search(ogg)
     if not m:
-        d = DITTA.search(ogg)
-        if d and 2 <= len(d.group(1)) <= 80 and not re.match(r"(AGGIUDICATARIA|ESECUTRICE|APPALTATRICE)\b", d.group(1), re.I):
-            return d.group(1).strip(" .")
         return None
     prima = TAGLIO.sub("", ogg[:m.start()]).strip(" .")
     parole = prima.split()[-5:]
@@ -74,7 +105,7 @@ def impresa(ogg):
         parole = parole[1:]
     if not parole or not re.search(r"[A-Za-z]{2}", " ".join(parole)):
         return None
-    return (" ".join(parole) + " " + m.group(1).upper().rstrip(".")).strip()
+    return _pulisci_nome((" ".join(parole) + " " + m.group(1).upper().rstrip(".")).strip())
 
 
 def numero(s):
@@ -136,6 +167,7 @@ def classifica(atto):
     ogg = PROFESSIONISTA.sub("[professionista]", ogg)
     ogg = COGNOME_TITOLO.sub("[professionista]", ogg)
     ogg = DI_PERSONA.sub(lambda m: m.group(1) + " [privato]", ogg)
+    ogg = oscura_ditte(ogg)
     cat = (atto.get("categoria", "") + " " + atto.get("sottocategoria", "")).lower()
     o = ogg.lower()
     if re.search(PERSONALI, ogg, re.I):

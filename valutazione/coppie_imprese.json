@@ -1,0 +1,83 @@
+{
+ "descrizione": "Coppie di nomi di imprese candidate (punteggio >= 0,3) dagli albi del 2026-11-26, etichettate a mano: stessa impresa si'/no. Servono per la calibrazione della confidenza, che restera' provvisoria finche' non arrivano le coppie ANAC.",
+ "coppie": [
+  {
+   "punteggio": 1.0,
+   "a": "UNARETI S.P.A",
+   "b": "UNARETI SPA",
+   "stessa_impresa": true
+  },
+  {
+   "punteggio": 1.0,
+   "a": "FIBERCOP S.P.A",
+   "b": "FIBERCOP SPA",
+   "stessa_impresa": true
+  },
+  {
+   "punteggio": 1.0,
+   "a": "ELCOTEM IMPIANTI S.R.L",
+   "b": "ELCOTEM IMPIANTI SRL",
+   "stessa_impresa": true
+  },
+  {
+   "punteggio": 1.0,
+   "a": "DALLA RIVA S.R.L",
+   "b": "DALLA RIVA SRL",
+   "stessa_impresa": true
+  },
+  {
+   "punteggio": 0.4321,
+   "a": "ELCOTEM IMPIANTI SRL",
+   "b": "IMPIANTI SRL",
+   "stessa_impresa": false
+  },
+  {
+   "punteggio": 0.4321,
+   "a": "ELCOTEM IMPIANTI S.R.L",
+   "b": "IMPIANTI SRL",
+   "stessa_impresa": false
+  },
+  {
+   "punteggio": 0.4088,
+   "a": "DIESSE SERVICE S.R.L",
+   "b": "SERVICE SRL",
+   "stessa_impresa": false
+  },
+  {
+   "punteggio": 0.3969,
+   "a": "ENEL SOLE SRL",
+   "b": "SOLE SRL",
+   "stessa_impresa": false
+  },
+  {
+   "punteggio": 0.3599,
+   "a": "FB IMPIANTI SRLS",
+   "b": "IMPIANTI SRL",
+   "stessa_impresa": false
+  },
+  {
+   "punteggio": 0.3477,
+   "a": "L.COSTRUZIONI SRL",
+   "b": "MARINO COSTRUZIONI S.R.L",
+   "stessa_impresa": false
+  },
+  {
+   "punteggio": 0.3287,
+   "a": "COSTRUZIONI CERRI SRL",
+   "b": "L.COSTRUZIONI SRL",
+   "stessa_impresa": false
+  },
+  {
+   "punteggio": 0.315,
+   "a": "EURO.PA SERVICE SRL",
+   "b": "SERVICE SRL",
+   "stessa_impresa": false
+  },
+  {
+   "punteggio": 0.3141,
+   "a": "MAXXI SERVICE SRLS",
+   "b": "SERVICE SRL",
+   "stessa_impresa": false
+  }
+ ]
+}
