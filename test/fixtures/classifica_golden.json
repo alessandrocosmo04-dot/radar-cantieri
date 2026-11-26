@@ -3873,21 +3873,13 @@
   "oggetto": "Contratto Attuativo N° 3 Accordo Quadro lavori di riqualificazione di strade comunali, piste ciclabili e arredo urbano - Liquidazione Incentivi Funzioni Tecniche “ Seconda Fase”",
   "categoria": "Determinazioni",
   "sottocategoria": "2026/1246 del 13/11/2026",
-  "atteso": {
-   "tipo": "opera_pubblica",
-   "fase": "esecuzione",
-   "impresa": null
-  }
+  "atteso": null
  },
  {
   "oggetto": "Contratto Attuativo N° 4 Accordo Quadro lavori di riqualificazione di strade comunali, piste ciclabili e arredo urbano - Liquidazione Incentivi Funzioni Tecniche “ Seconda Fase”",
   "categoria": "Determinazioni",
   "sottocategoria": "2026/1245 del 13/11/2026",
-  "atteso": {
-   "tipo": "opera_pubblica",
-   "fase": "esecuzione",
-   "impresa": null
-  }
+  "atteso": null
  },
  {
   "oggetto": "Progressioni economiche all’interno delle aree - anno 2026 – approvazione graduatoria e contestuale liquidazione dei differenziali stipendiali spettanti – ex art. 18 CCNL 2025-2027",
@@ -4837,11 +4829,7 @@
   "oggetto": "DETERMINAZIONE DI ACCERTAMENTO D'ENTRATA DELLA SOMMA DI EURO 190.481,90 IVA INCLUSA QUALE CORRISPETTIVO DOVUTO AL COMUNE DI CINISELLO BALSAMO PER LA CONCESSIONE D'USO DI SOTTOSUOLO PER LA REALIZZAZIONE DI UNA RETE PRIVATA DI TELERISCALDAMENTO DA PARTE DELLA SOCIETA' ENGIE SERVIZI S.P.A. - ANNO 2026.",
   "categoria": "Determinazioni Dirigenziali",
   "sottocategoria": "Gest Sottoserv e Manut Strade - Determina Dirigenziale 2026/1409",
-  "atteso": {
-   "tipo": "opera_pubblica",
-   "fase": "altro",
-   "impresa": "ENGIE SERVIZI S.P.A"
-  }
+  "atteso": null
  },
  {
   "oggetto": "Riduzione dell'impegno n. 2026/1148 relativa alla concessione del contributo per l'evento \"STRACINISELLOBALSAMO” a favore dell’Associazione Sportiva Di Donatori Sangue approvato con delibera di Giunta Comunale n. 2026/32",

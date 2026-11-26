@@ -18,7 +18,7 @@ URBANISTICA = (r"\b(permess\w* di costruire|piano attuativo|piano di lottizzazio
                r"piano di recupero|ambito di trasformazione|rigenerazione urbana|titolo abilitativo|piano particolareggiato|"
                r"asta pubblica|alienazion\w* (di |del |dell'|dei )?(immobil\w*|area|aree|terren\w*|fabbricat\w*)|valorizzazion\w* immobiliar\w*|piano delle alienazioni)\b")
 # esclusioni: si applicano solo se non c'e' segnale urbanistico e non si parla esplicitamente di lavori/opere
-NON_EDILIZIA = (r"\b(refezione|mensa|ristorazione scolastica|libri di testo|trasporto scolastico|trasporto (studenti|alunni|disabili)|studenti|alunni|"
+NON_EDILIZIA = (r"\b(pulizi\w*|portierato|rinfresco|inaugurazion\w*|posteggi|patrocinio|offerta formativa|resistere in giudizio|ricorso|spese condominiali|utilizzo (degli )?impianti|concessione d'uso|refezione|mensa|ristorazione scolastica|libri di testo|trasporto scolastico|trasporto (studenti|alunni|disabili)|studenti|alunni|"
                 r"inclusione|counsel+ing|sportello|assistenza (educativa|domiciliare)|personale dipendente|concors\w*|assunzion\w*|"
                 r"mobilit[aà]'? (esterna|volontaria)|lavoro straordinario|formazione|segnalibri|reading|teatr\w*|festa|presepi?|biblioteca|"
                 r"rimbors\w*|canone|utenze|consum\w*|fattur\w*|diritti|vigili del fuoco|rifiuti|igiene (urbana|ambientale)|spurgh\w*|smaltimento|"
@@ -33,23 +33,23 @@ DI_PERSONA = re.compile(r"\b(RICHIEDENTE|PROPRIET[AÀ] DI|PRESENTAT[AO] DA|INTES
 PERSONALI = (r"\b(a carico di|deposito (dell')?atto|notific\w*|intimazione|sig\.?r?a?\.?\s+[A-Z]|signor[ae]?\b|abusi edilizi|abuso edilizio|"
              r"ingiunzione|demolizione d'ufficio|decesso|eredi|nato a|nata a|codice fiscale [A-Z]{6}\d{2}|ritiro (del )?veicolo|matrimoni\w*|"
              r"graduatori\w*|art\.?\s?(60|140|143) del (d\.?p\.?r|c\.?p\.?c)|d\.?p\.?r\.? 600/73|contingibil\w*|propriet[aà] (di|del sig|della sig)|beneficiari|scia n\.? ?\d+|mozione|interrogazione|conguagl\w*|assegnazione del contributo)")
-SEMPRE_FUORI = r"restituzione (di )?(parte )?(della )?somm|defibrillator|traslochi|trasloco|stalli di sosta|diritti di segreteria|sponsorizzazion|\bconvocazione\b|ponte radio|trasporto e smaltimento|magazzino comunale|\bpums\b|piano urbano della mobilit|piano generale del traffico"
+SEMPRE_FUORI = r"liquidazione (degli |di )?incentivi|avviso di selezione|selezione pubblica per|restituzione (di )?(parte )?(della )?somm|defibrillator|traslochi|trasloco|stalli di sosta|diritti di segreteria|sponsorizzazion|\bconvocazione\b|ponte radio|trasporto e smaltimento|magazzino comunale|\bpums\b|piano urbano della mobilit|piano generale del traffico"
 CATEGORIE_ESCLUSE = r"abusi|messi|matrimon|anagrafe|stato civile|notific|deposit|concors|personale|elezion|mozion"
 
 FASI = [
     ("revoca", r"\brevoca\b|annullamento in autotutela"),
-    ("collaudo", r"certificato di regolare esecuzione|collaudo|conto finale|rata (di saldo|finale)|stato finale"),
-    ("esecuzione", r"stato di avanzamento|\bs\.?a\.?l\.?\b|certificato di pagamento|contratto attuativo|variante in corso|perizia di variante|modifica contrattuale|subappalto|consegna (dei )?lavori|sospensione (dei )?lavori|ripresa (dei )?lavori"),
+    ("collaudo", r"ultimazione (dei )?lavori|avviso ai creditori|ad opponendum|certificato di regolare esecuzione|collaudo|conto finale|rata (di saldo|finale)|stato finale"),
+    ("esecuzione", r"modifica del contratto|integrazione dei lavori|stato di avanzamento|\bs\.?a\.?l\.?\b|certificato di pagamento|contratto attuativo|variante in corso|perizia di variante|modifica contrattuale|subappalto|consegna (dei )?lavori|sospensione (dei )?lavori|ripresa (dei )?lavori"),
     ("asta_immobile", r"asta pubblica|alienazion\w*"),
-    ("affidamento", r"aggiudicazion\w*|affidament\w*|contestual\w* affidamento|alla ditta|all'impresa|all'operatore economico|incarico"),
+    ("affidamento", r"aggiudic\w*|affidament\w*|contestual\w* affidamento|alla ditta|all'impresa|all'operatore economico|incarico"),
     ("gara_in_partenza", r"(determina(zione)? a|decisione a|determinazione di) contrarre|indizione|avvio (della )?procedura|bando|procedura negoziata|procedura aperta|manifestazione di interesse|avviso esplorativo"),
     ("autorizzazione", r"autorizzazione (all'esecuzione|del progetto)|permess\w* di costruire|titolo abilitativo|autorizzazione paesaggistica|nulla osta"),
     ("programmazione", r"programma triennale|elenco annuale|piano triennale delle opere"),
-    ("progetto", r"quadro economico|approvazione (del )?progett\w*|progetto (esecutivo|definitivo|di fattibilit\w*)|pfte|studio di fattibilit\w*|documento di indirizzo|adozione|approvazione definitiva"),
+    ("progetto", r"\bp\.?\s?e\.\s|\bp\.?e\.?$|atti progettuali|quadro economico|approvazione (del )?progett\w*|progetto (esecutivo|definitivo|di fattibilit\w*)|pfte|studio di fattibilit\w*|documento di indirizzo|adozione|approvazione definitiva"),
     ("finanziamento", r"finanziament\w*|contributo regionale|pnrr|accertamento (di )?entrata|bando regionale"),
 ]
 
-IMPORTO = re.compile(r"(?:€|euro|eur\.?)\s*([\d\.]{1,15},\d{2}|[\d\.]{4,15})|([\d\.]{4,15},\d{2})\s*(?:€|euro)", re.I)
+IMPORTO = re.compile(r"(?:€|\beuro\b|\beur\.?)\s*[\.:]?\s*([\d\.]{1,15},\d{2}|[\d\.]{4,15})|([\d\.]{4,15},\d{2})\s*(?:€|euro)", re.I)
 CIG = re.compile(r"\bCIG[:\s\.n°]*([A-Z0-9]{10})\b", re.I)
 CUP = re.compile(r"\bCUP[:\s\.n°]*([A-Z]\d{2}[A-Z0-9]{12})\b", re.I)
 SUFFISSO = re.compile(r"\b(S\.?R\.?L\.?S?|S\.?P\.?A\.?|S\.?N\.?C\.?|S\.?A\.?S\.?|SOC\.? COOP\.?|SOCIET[AÀ] COOPERATIVA)(?=[\s\.,;:\-–)\"”']|$)", re.I)
@@ -92,7 +92,7 @@ def fase(o):
         return "gara_in_partenza"
     if re.search(r"svolgimento della gara|gara per l'affidamento|gara d'appalto per", o):
         return "gara_in_partenza"
-    if re.search(r"contrarre", o) and not re.search(r"contestual\w*\s+(e\s+)?affidament|e affidamento|ed affidamento|aggiudicazion", o):
+    if re.search(r"contrarre|contrattare", o) and not re.search(r"contestual\w*\s+(e\s+)?affidament|e affidamento|ed affidamento|aggiudicazion", o):
         return "gara_in_partenza"
     return next((nome for nome, rx in FASI if re.search(rx, o, re.I)), "altro")
 
@@ -153,7 +153,7 @@ def classifica(atto):
     lav = re.search(LAVORI, o, re.I)
     if not (urb or lav):
         return None
-    esplicito = re.search(r"\b(lavori|opere|opera pubblica|manutenzione straordinaria|cantiere)\b", o)
+    esplicito = re.search(r"\b(lavori|opere|opera pubblica|manutenzione (ordinaria e )?straordinaria|cantiere|coperture?)\b", o)
     if not urb and not esplicito and re.search(NON_EDILIZIA, o, re.I):
         return None
     importi = [numero(a or b) for a, b in IMPORTO.findall(ogg)]
