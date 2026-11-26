@@ -145,6 +145,27 @@ class TestAlboJSP(Base):
         self.assertTrue(atti[0]["url"].startswith("https://attinew.comune.cinisello-balsamo.mi.it/albopretorio/AlboPretorio?servizio=dettaglio"))
 
 
+class TestMilano(Base):
+    def test_milano(self):
+        def risposta(u, d):
+            if "/api/categories/" in u:
+                return leggi("milano_cat.json")
+            if "categories[]=10&" in u and u.endswith("page=1"):
+                return leggi("milano_p1.json")
+            if "categories[]=10&" in u and u.endswith("page=2"):
+                return leggi("milano_p2.json")
+            if "categories[]=4&" in u and u.endswith("page=1"):
+                return leggi("milano_d1.json")
+            return '{"data": [], "total_pages": 1}'
+        rete = FintaRete([(lambda u, d: True, None)])
+        rete.risposte = []
+        C.get = lambda op, url, data=None: (rete.chiamate.append((url, data)) or (risposta(url, data), url))
+        atti = C.MilanoAPI().leggi("https://albopretorio.comune.milano.it/", dt.date(2026, 11, 1))
+        self.controlla(atti, 25)
+        self.assertFalse(any("categories[]=108&" in u or "categories[]=106&" in u for u, _ in rete.chiamate))  # matrimoni e notifiche mai scaricati
+        self.assertTrue(all(a["url"].startswith("https://albopretorio.comune.milano.it/documents/") for a in atti))
+
+
 class TestRiconoscimento(unittest.TestCase):
     def test_piattaforme(self):
         casi = {

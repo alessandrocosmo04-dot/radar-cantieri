@@ -477,7 +477,53 @@ class AlboJSP:
         return [r for r in out if not r["inizio_pubbl"] or r["inizio_pubbl"] >= dal]
 
 
-CONNETTORI = [JCityGov(), EPal(), Halley(), DgegovPA(), Sicraweb(), Urbi(), ComuneWeb(), HalleyEG(), AlboJSP()]
+# ---------------------------------------------------------------- Comune di Milano (albopretorio.comune.milano.it, API JSON)
+# /api/categories/ elenca i tipi di atto; /api/documents/?categories[]=<id>&page=N restituisce 10 atti per pagina,
+# dal piu' recente. Le categorie con dati personali (matrimoni, notificazioni) non vengono nemmeno scaricate.
+
+def _data_iso(s):
+    try:
+        return dt.date.fromisoformat((s or "")[:10])
+    except ValueError:
+        return None
+
+
+class MilanoAPI:
+    nome = "milano-api"
+    SALTA = re.compile(r"matrimon|notificazion|deposito", re.I)
+
+    @staticmethod
+    def riconosci(url):
+        return "albopretorio.comune.milano.it" in url
+
+    def leggi(self, url_albo, dal, max_pagine=80):
+        import json
+        u = urllib.parse.urlparse(url_albo)
+        base = "{0.scheme}://{0.netloc}".format(u)
+        op = sessione()
+        cat = json.loads(get(op, base + "/api/categories/?category_filter=")[0])
+        out = []
+        for c in cat.get("level_1", []):
+            if not c.get("count") or self.SALTA.search(c["name"]):
+                continue
+            for pagina in range(1, max_pagine + 1):
+                j = json.loads(get(op, f"{base}/api/documents/?categories[]={c['id']}&categories[]=&page={pagina}")[0])
+                for d in j.get("data", []):
+                    out.append({
+                        "id": str(d["id"]), "registro": f"{d.get('number', '')}/{d.get('year', '')}",
+                        "categoria": c["name"], "sottocategoria": d.get("sector") or "",
+                        "oggetto": testo(d.get("subject") or ""), "inizio_pubbl": _data_iso(d.get("dt_pub_start")),
+                        "fine_pubbl": _data_iso(d.get("dt_pub_end")), "url": f"{base}/documents/{d['id']}",
+                        "piattaforma": self.nome,
+                    })
+                dati = j.get("data", [])
+                if not dati or pagina >= j.get("total_pages", 1) or (_data_iso(dati[-1].get("dt_pub_start")) or dal) < dal:
+                    break
+        unici = {r["id"]: r for r in out}  # una pagina puo' slittare se nel frattempo esce un atto nuovo
+        return [r for r in unici.values() if not r["inizio_pubbl"] or r["inizio_pubbl"] >= dal]
+
+
+CONNETTORI = [JCityGov(), EPal(), Halley(), DgegovPA(), Sicraweb(), Urbi(), ComuneWeb(), HalleyEG(), AlboJSP(), MilanoAPI()]
 
 # Piattaforme riconosciute ma ancora senza connettore (prossimi da scrivere)
 PIATTAFORME_NOTE = {
