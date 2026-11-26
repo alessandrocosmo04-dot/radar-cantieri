@@ -1,0 +1,52 @@
+# Aggiornamento mensile degli open data ANAC (appalti, aggiudicazioni, imprese vincitrici, attestazioni SOA).
+# Il primo giro scarica lo storico 2023-2025 (diversi GB, scaricati e cancellati un file alla volta): puo' durare ore.
+name: anac-mensile
+
+on:
+  schedule:
+    - cron: "0 3 4 * *"    # il 4 di ogni mese, dopo la pubblicazione ANAC dei file mensili (giorno 1)
+  workflow_dispatch:
+    inputs:
+      anni:
+        description: "Anni storici da caricare"
+        default: "2023,2024,2025"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radar          # stesso gruppo del giro giornaliero: mai due scritture insieme
+  cancel-in-progress: false
+
+jobs:
+  anac:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test
+        run: python3 -m unittest discover -s test
+      - name: Aggiorna ANAC
+        run: python3 anac.py aggiorna --anni "${{ github.event.inputs.anni || '2023,2024,2025' }}"
+      - name: Controllo dimensione (GitHub rifiuta file oltre 100 MB)
+        run: |
+          ls -la dati/anac.db
+          [ "$(stat -c %s dati/anac.db)" -lt 95000000 ]
+      - name: Salva
+        run: |
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add dati/anac.db
+          git diff --cached --quiet || git commit -m "anac $(date -u +%F)"
+          git pull --rebase -X theirs origin main
+          git push
+      - name: Copia scaricabile
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: anac-${{ github.run_id }}
+          path: dati/anac.db
+          retention-days: 30
