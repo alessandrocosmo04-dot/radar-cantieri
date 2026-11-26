@@ -4,9 +4,9 @@ Ogni connettore espone  leggi(url_albo, dal: date) -> lista di atti normalizzati
   {comune, piattaforma, id, registro, categoria, sottocategoria, oggetto, inizio_pubbl, fine_pubbl, url}
 Solo libreria standard.
 """
-import datetime as dt, html, http.cookiejar, re, time, urllib.parse, urllib.request
+import datetime as dt, html, http.cookiejar, re, time, urllib.error, urllib.parse, urllib.request
 
-UA = "RadarCantieri/0.1 (+raccolta albo pretorio, contatto nel sito)"
+UA = "Mozilla/5.0 (X11; Linux x86_64) RadarCantieri/0.2 (raccolta albo pretorio; pausa 1s fra le richieste)"
 PAUSA = 1.0  # secondi fra una richiesta e l'altra: siamo ospiti sui server dei comuni
 
 
@@ -20,8 +20,15 @@ def sessione():
 def get(op, url, data=None):
     time.sleep(PAUSA)
     body = urllib.parse.urlencode(data).encode() if data else None
-    with op.open(url, data=body, timeout=40) as r:
-        grezzo, cs = r.read(), r.headers.get_content_charset()
+    for tentativo in (1, 2):  # un secondo tentativo per i siti lenti o che chiudono la connessione
+        try:
+            with op.open(url, data=body, timeout=60) as r:
+                grezzo, cs = r.read(), r.headers.get_content_charset()
+            break
+        except (ConnectionError, TimeoutError, urllib.error.URLError) as e:
+            if tentativo == 2 or isinstance(e, urllib.error.HTTPError):
+                raise
+            time.sleep(5)
         try:
             return grezzo.decode(cs or "utf-8"), r.geturl()
         except (UnicodeDecodeError, LookupError):
@@ -56,7 +63,9 @@ class JCityGov:
         base = "{0.scheme}://{0.netloc}".format(urllib.parse.urlparse(url_albo))
         pagina, errore = "", None
         # prima l'indirizzo della mappa, poi i percorsi standard (alcuni comuni usano /it/web/... o /web/trasparenzaj/...)
-        for u in dict.fromkeys([url_albo, base + "/web/trasparenza/albo-pretorio", base + "/it/web/trasparenza/albo-pretorio"]):
+        candidati = [url_albo] + [base + p + "/web/trasparenza/" + q for p in ("", "/it")
+                                  for q in ("albo-pretorio", "dettaglio-albo-pretorio", "menu-albo-pretorio")]
+        for u in dict.fromkeys(candidati):
             try:
                 pagina, _ = get(op, u)
             except Exception as e:
@@ -415,6 +424,10 @@ class HalleyEG:
         op = sessione()
         home, finale = get(op, url_albo)
         jb = re.search(r'<meta name="jb" content="([^"]+)"', home)
+        if not jb:  # es. redirect.html?F=MC09: la pagina vera si apre con un POST a /EG0/EGHOMEPAGE.HBL
+            h = urllib.parse.urlparse(finale)
+            home, finale = get(op, "{0.scheme}://{0.netloc}/EG0/EGHOMEPAGE.HBL".format(h), {"F": "MC09"})
+            jb = re.search(r'<meta name="jb" content="([^"]+)"', home)
         if not jb:
             raise ValueError("halley-eg: indirizzo di sessione (meta jb) non trovato")
         u = urllib.parse.urlparse(finale)
