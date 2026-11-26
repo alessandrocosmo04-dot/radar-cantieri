@@ -1,0 +1,134 @@
+istat;comune;sito;cf;url_albo;piattaforma;errore
+015002;Abbiategrasso;www.comune.abbiategrasso.mi.it;01310880156;https://abbiategrasso.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio;jcitygov;
+015005;Albairate;www.comune.albairate.mi.it;03623810151;;;<urlopen error [Errno 104] Connection reset by peer>
+015007;Arconate;www.arconate.org;01336730153;;;<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)>
+015009;Arese;www.comune.arese.mi.it;03366130155;;;<urlopen error [Errno 104] Connection reset by peer>
+015010;Arluno;www.comune.arluno.mi.it;02938070154;https://dgegovpa.it/Arluno/Albo/Albo;dgegovpa;
+015011;Assago;www.comune.assago.mi.it;80101990150;https://assago.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio;jcitygov;
+015250;Baranzate;www.comune.baranzate.mi.it;04669050967;https://comune-baranzate.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio;jcitygov;
+015012;Bareggio;www.comune.bareggio.mi.it;82000710150;https://dgegovpa.it/bareggio/albo/albo;dgegovpa;
+015014;Basiano;www.unione.basianomasate.mi.it;83504250156;https://www.unione.basianomasate.mi.it/site/redirect.xsp?redirect=http%3A%2F%2Fhalleyweb.com%2Fucbasianomasate%2Fmc%2Fmc_p_ricerca.php%3Fmenu%3D350%26sa%3D0%26tipohtml%3D1%26rrfupro%3D..%2Fmc%2Fmc_p_ricerca.php%26nodo%3D15%26%26x%3Da3e043d729eca1ec016863fe340a1d3a%26fun%3D350%26abi%3D0%26server%3D%26ente%3Ducbasianomasate%26DOABKPR%3D23%26sigla%3DE1%26fogliaClick%3Droot_14%26fnode%3D14%2314&databaseName=ucbm%5Cucbm.nsf;halley;
+015015;Basiglio;www.comune.basiglio.mi.it;80109890154;;;<urlopen error timed out>
+015016;Bellinzago Lombardo;www.comune.bellinzagolombardo.mi.it;01554230159;http://www.halleyweb.com/c015016/index.php?servizio=304;halley;albo non raggiungibile: [Errno 104] Connection reset by peer
+015019;Bernate Ticino;www.comune.bernateticino.mi.it;03365620156;https://www.servizipubblicaamministrazione.it/servizi/saturnweb/Home.aspx?ce=brnttcn1113;saturnweb;
+015022;Besate;www.comune.besate.mi.it;04935080152;;;link albo non trovato
+015024;Binasco;www.comune.binasco.mi.it;80121330155;https://binasco.trasparenza-valutazione-merito.it/web/trasparenza/menu-albo-pretorio;jcitygov;
+015026;Boffalora Sopra Ticino;comune.boffalorasopraticino.mi.it;02030870154;;;HTTP Error 503: Service Unavailable
+015027;Bollate;www.comune.bollate.mi.it;00801220153;https://bollate.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio;jcitygov;
+015032;Bresso;www.bresso.net;00935810150;https://servizionline.hspromilaprod.hypersicapp.net/cmsbresso/portale/albopretorio/albopretorioconsultazione.aspx?P=400;sicraweb-cms;albo non raggiungibile: The read operation timed out
+015035;Bubbiano;www.comune.bubbiano.mi.it;80137950152;;;<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f
+015036;Buccinasco;www.comune.buccinasco.mi.it;03482920158;https://buccinasco.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio;jcitygov;
+015038;Buscate;www.comune.buscate.mi.it;03391930157;https://www.servizipubblicaamministrazione.it/servizi/saturnweb/Home.aspx?Ce=bsct247;saturnweb;
+015040;Bussero;www.comune.bussero.mi.it;03063770154;https://portaleonline.comune.bussero.mi.it/cmsbussero/portale/albopretorio/albopretorioconsultazione.aspx?P=400;sicraweb-cms;
+015041;Busto Garolfo;www.comune.bustogarolfo.mi.it;00873100150;https://www.comune.bustogarolfo.mi.it/it-it/amministrazione/albo-pretorio;sconosciuta;
+015042;Calvignasco;www.comune.calvignasco.mi.it;80105450151;http://www.halleyweb.com/c015042/mc/mc_p_ricerca.php;halley;albo non raggiungibile: [Errno 104] Connection reset by peer
+015044;Cambiago;www.comune.cambiago.mi.it;02516430150;https://cambiago.trasparenza-valutazione-merito.it:443/albo-pretorio;jcitygov;
+015046;Canegrate;www.comune.canegrate.mi.it;00835500158;http://www.halleyweb.com/c015046/index.php?servizio=304;halley;albo non raggiungibile: [Errno 104] Connection reset by peer
+015050;Carpiano;www.comune.carpiano.mi.it;84501650158;;;link albo non trovato
+015051;Carugate;www.comune.carugate.mi.it;02182060158;;;link albo non trovato
+015055;Casarile;www.comune.casarile.mi.it;80100370156;;;<urlopen error [Errno 104] Connection reset by peer>
+015058;Casorezzo;www.comune.casorezzo.mi.it;01082050152;;;link albo non trovato
+015059;Cassano d'Adda;www.comune.cassanodadda.mi.it;03674570159;;;HTTP Error 504: Gateway Timeout
+015170;Pero;www.comune.pero.mi.it;86502820151;https://pero.trasparenza-valutazione-merito.it/web/trasparenza/dettaglio-albo-pretorio?p_p_id=jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_count=1&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page-parent=0&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page=36338;jcitygov;
+015060;Cassina De' Pecchi;www.comune.cassinadepecchi.mi.it;83500570151;https://cassinadepecchi.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio;jcitygov;
+015061;Cassinetta di Lugagnano;www.comune.cassinettadilugagnano.mi.it;03621920150;;;link albo non trovato
+015062;Castano Primo;www.comune.castanoprimo.mi.it;01639920154;https://castanoprimo.trasparenza-valutazione-merito.it/web/trasparenza/menu-albo-pretorio;jcitygov;
+015070;Cernusco sul Naviglio;www.comune.cernuscosulnaviglio.mi.it;01217430154;;;<urlopen error [Errno 104] Connection reset by peer>
+015071;Cerro al Lambro;www.comune.cerroallambro.mi.it;84503860151;https://cerroallambro.trasparenza-valutazione-merito.it/web/trasparenza/menu-albo-pretorio;jcitygov;
+015072;Cerro Maggiore;www.cerromaggiore.org;01230310151;;;<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)>
+015074;Cesano Boscone;www.comune.cesano-boscone.mi.it;80098810155;https://cesanoboscone.trasparenza-valutazione-merito.it/web/trasparenza/dettaglio-albo-pretorio?p_p_id=jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_count=1&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page-parent=0&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page=4652;jcitygov;
+015076;Cesate;www.comune.cesate.mi.it;80100990151;;;<urlopen error [Errno 104] Connection reset by peer>
+015077;Cinisello Balsamo;www.comune.cinisello-balsamo.mi.it;01971350150;https://www.comune.cinisello-balsamo.mi.it/spip.php?article10510;sconosciuta;
+015078;Cisliano;www.comune.cisliano.mi.it;82003070156;https://dgegovpa.it/Cisliano/albo/albo;dgegovpa;
+015081;Cologno Monzese;www.comune.colognomonzese.mi.it;03353020153;;;HTTP Error 504: Gateway Timeout
+015082;Colturano;comune.colturano.mi.it;84503720157;https://colturano.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio;jcitygov;
+015085;Corbetta;www.comune.corbetta.mi.it;03122360153;https://servizionline.comune.corbetta.mi.it/hypersicportal/portale/albopretorio/albopretorioconsultazione.aspx?P=400;sicraweb-cms;
+015086;Cormano;www.comune.cormano.mi.it;01086310156;https://cormano.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio;jcitygov;
+015087;Cornaredo;www.comune.cornaredo.mi.it;02981700152;;;<urlopen error [Errno 104] Connection reset by peer>
+015150;Morimondo;www.comune.morimondo.mi.it;82003090154;https://www.servizipubblicaamministrazione.it/servizi/saturnweb/Pubblicazioni.aspx?RicCro=1&CE=mrmnd1496;saturnweb;
+015093;Corsico;www.comune.corsico.mi.it;00880000153;https://corsico.e-pal.it/AlboOnline/ricercaAlbo;e-pal;
+015096;Cuggiono;www.comune.cuggiono.mi.it;00861770154;https://dgegovpa.it/Cuggiono/Albo/Albo;dgegovpa;
+015097;Cusago;www.comune.cusago.mi.it;80095950152;;;link albo non trovato
+015098;Cusano Milanino;www.comune.cusano-milanino.mi.it;83005680158;https://www.dgegovpa.it/CusanoMilanino/Albo/Albo;dgegovpa;
+015099;Dairago;www.comune.dairago.mi.it;01068100153;https://servizi.comune.dairago.mi.it/ServiziOnLine/Istanze/landingIstanza?Id=1;sconosciuta;albo non raggiungibile: <urlopen error timed out>
+015101;Dresano;www.comune.dresano.mi.it;84503760153;https://dresano.trasparenza-valutazione-merito.it/web/trasparenza/menu-albo-pretorio;jcitygov;
+015103;Gaggiano;www.comune.gaggiano.mi.it;82001390150;https://gaggiano.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio;jcitygov;
+015105;Garbagnate Milanese;www.comune.garbagnate-milanese.mi.it;00792720153;https://garbagnatemilanese.trasparenza-valutazione-merito.it/web/trasparenzaj/albo-pretorio;jcitygov;
+015106;Gessate;www.comune.gessate.mi.it;00973680150;https://servizi.comune.gessate.mi.it/EG0/EGHOMEPAGE.HBL?ss=1&F=H04&freeze=1;halley-eg;
+015108;Gorgonzola;www.comune.gorgonzola.mi.it;00861930154;https://gorgonzola.trasparenza-valutazione-merito.it/web/trasparenza/menu-albo-pretorio?ID_MacroMenu=1;jcitygov;
+015110;Grezzago;www.comune.grezzago.mi.it;83500690157;;;<urlopen error [Errno 104] Connection reset by peer>
+015112;Gudo Visconti;www.comune.gudovisconti.mi.it;82000830156;;;link albo non trovato
+015113;Inveruno;comune.inveruno.mi.it;01490870159;https://inveruno.halleyegov.it/redirect.html?F=MC09;halley-eg;
+015114;Inzago;www.comune.inzago.mi.it;83503270155;https://servizionline.hspromilaprod.hypersicapp.net/cmsinzago/portale/albopretorio/albopretorioconsultazione.aspx?P=600;sicraweb-cms;
+015115;Lacchiarella;www.comune.lacchiarella.mi.it;80094250158;https://lacchiarella.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio/;jcitygov;
+015116;Lainate;www.comune.lainate.mi.it;00856780150;https://lainate.trasparenza-valutazione-merito.it/web/trasparenza/dettaglio-albo-pretorio?p_p_id=jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_count=1&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page-parent=1489186102&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page=1489186103;jcitygov;
+015118;Legnano;comune.legnano.mi.it;00807960158;https://cloud.urbi.it/urbi/progs/urp/ur1ME001.sto?DB_NAME=n1234384&w3cbt=S;urbi;
+015122;Liscate;www.comune.liscate.mi.it;83503450153;http://www.halleyweb.com/unddamart/index.php?servizio=304;halley;
+015125;Locate di Triulzi;www.comune.locateditriulzi.mi.it;80101630152;https://servizi.comune.locateditriulzi.mi.it/openweb/albo/albo_pretorio.php?layout=true;sconosciuta;albo non raggiungibile: HTTP Error 403: Forbidden
+015130;Magenta;www.comune.magenta.mi.it;01082490150;;;<urlopen error [Errno 104] Connection reset by peer>
+015131;Magnago;www.comune.magnago.mi.it;00950100156;https://www.servizipubblicaamministrazione.it/servizi/saturnweb/home.aspx?ce=mgng033;saturnweb;
+015134;Marcallo con Casone;www.marcallo.it;01009620152;https://www.halleyweb.com/c015134/mc/mc_p_ricerca.php?x=a17bc065172b14ec7883464375adb516&impresa=&cod_fis=&servizio=304;halley;albo non raggiungibile: <urlopen error [Errno 104] Connection reset by peer>
+015136;Masate;www.unione.basianomasate.mi.it;83510480151;https://www.unione.basianomasate.mi.it/site/redirect.xsp?redirect=http%3A%2F%2Fhalleyweb.com%2Fucbasianomasate%2Fmc%2Fmc_p_ricerca.php%3Fmenu%3D350%26sa%3D0%26tipohtml%3D1%26rrfupro%3D..%2Fmc%2Fmc_p_ricerca.php%26nodo%3D15%26%26x%3Da3e043d729eca1ec016863fe340a1d3a%26fun%3D350%26abi%3D0%26server%3D%26ente%3Ducbasianomasate%26DOABKPR%3D23%26sigla%3DE1%26fogliaClick%3Droot_14%26fnode%3D14%2314&databaseName=ucbm%5Cucbm.nsf;halley;
+015139;Mediglia;www.comune.mediglia.mi.it;84503580155;https://servizi.comune.mediglia.mi.it/ServiziOnLine/Istanze/landingIstanza?Id=7;sconosciuta;albo non raggiungibile: <urlopen error timed out>
+015140;Melegnano;www.comune.melegnano.mi.it;84507510158;https://melegnano.trasparenza-valutazione-merito.it/web/trasparenza/menu-albo-pretorio;jcitygov;
+015142;Melzo;www.comune.melzo.mi.it;00795710151;;;link albo non trovato
+015144;Mesero;www.comune.mesero.mi.it;03476900158;https://www.halleyweb.com/c015144/index.php?servizio=304;halley;albo non raggiungibile: <urlopen error [Errno 104] Connection reset by peer>
+015146;Milano;www.comune.milano.it;01199250158;;;HTTP Error 403: Forbidden
+015151;Motta Visconti;comune.mottavisconti.mi.it;82000790152;https://www.hspromilaprod.hypersicapp.net/hypersicmottavisconti/login.aspx;sicraweb-cms;
+015154;Nerviano;www.comune.nerviano.mi.it;00864790159;;;<urlopen error timed out>
+015155;Nosate;www.comune.nosate.mi.it;03606860157;https://www.servizipubblicaamministrazione.it/servizi/saturnweb/Home.aspx?ce=nst1032;saturnweb;
+015157;Novate Milanese;www.comune.novate-milanese.mi.it;02032910156;https://novate-milanese.e-pal.it/AlboOnline/ricercaAlbo;e-pal;
+015158;Noviglio;www.comune.noviglio.mi.it;80121990156;https://servizionline.hspromilaprod.hypersicapp.net/cmsnoviglio/portale/albopretorio/albopretorioconsultazione.aspx?P=400;sicraweb-cms;
+015159;Opera;www.comune.opera.mi.it;80104310158;;;link albo non trovato
+015164;Ossona;www.comune.ossona.mi.it;86002350154;https://servizionline.hspromilaprod.hypersicapp.net/cmsossona/portale/albopretorio/albopretorioconsultazione.aspx?P=400;sicraweb-cms;
+015165;Ozzero;www.comune.ozzero.mi.it;04935070153;https://dgegovpa.it/Ozzero/Albo/Albo;dgegovpa;
+015166;Paderno Dugnano;www.comune.paderno-dugnano.mi.it;02866100155;https://dgegovpa.it/Paderno/Albo/Albo;dgegovpa;
+015167;Pantigliate;www.comune.pantigliate.mi.it;80108750151;https://pantigliate.trasparenza-valutazione-merito.it/web/trasparenza/menu-albo-pretorio;jcitygov;
+015168;Parabiago;www.comune.parabiago.mi.it;01059460152;;;<urlopen error timed out>
+015169;Paullo;www.comune.paullo.mi.it;84503130159;https://paullo.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio;jcitygov;
+015171;Peschiera Borromeo;www.comune.peschieraborromeo.mi.it;80101570150;https://portale.comune.peschieraborromeo.mi.it/cmspborromeo/portale/albopretorio/albopretorioconsultazione.aspx?P=600;sicraweb-cms;
+015172;Pessano Con Bornago;www.comune.pessanoconbornago.mi.it;03064000155;https://servizionline.comune.pessanoconbornago.mi.it/cmspessano/portale/albopretorio/albopretorioconsultazione.aspx?P=400;sicraweb-cms;
+015173;Pieve Emanuele;www.comune.pieveemanuele.mi.it;80104290152;https://pieveemanuele.trasparenza-valutazione-merito.it/web/trasparenza/dettaglio-albo-pretorio?p_p_id=jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_count=1&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page-parent=0&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page=10070;jcitygov;
+015175;Pioltello;www.comune.pioltello.mi.it;83501410159;https://pioltello.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio;jcitygov;
+015176;Pogliano Milanese;comune.poglianomilanese.mi.it;86502140154;https://portale.comune.poglianomilanese.mi.it/openweb/albo/albo_pretorio_tipologia_new.php;sconosciuta;albo non raggiungibile: HTTP Error 403: Forbidden
+015177;Pozzo D'Adda;www.comune.pozzodadda.mi.it;83503590156;https://www.halleyweb.com/c015177/mc/mc_gridev_messi.php;halley;albo non raggiungibile: <urlopen error [Errno 104] Connection reset by peer>
+015178;Pozzuolo Martesana;www.comune.pozzuolomartesana.mi.it;83504230158;https://pozzuolomartesana.halleyegov.it/redirect.html?F=MC09;halley-eg;
+015179;Pregnana Milanese;www.comune.pregnana.mi.it;86502760159;https://www.halleyweb.com/c015179/mc/mc_p_ricerca.php;halley;albo non raggiungibile: <urlopen error [Errno 104] Connection reset by peer>
+015181;Rescaldina;www.comune.rescaldina.mi.it;01633080153;https://rescaldina.trasparenza-valutazione-merito.it/web/trasparenza/dettaglio-albo-pretorio?p_p_id=jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_count=1&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page-parent=0&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page=31241;jcitygov;
+015182;Rho;www.comune.rho.mi.it;00893240150;https://cloud.urbi.it/urbi/progs/urp/ur1ME001.sto?DB_NAME=n200501&w3cbt=S;urbi;
+015183;Robecchetto con Induno;www.comune.robecchetto-con-induno.mi.it;86002510153;https://comune.robecchetto-con-induno.mi.it/documenti/2976191/modello-reindirizzamento;sconosciuta;
+015184;Robecco Sul Naviglio;www.comune.robeccosulnaviglio.mi.it;82002470159;;;<urlopen error [Errno 104] Connection reset by peer>
+015185;Rodano;www.comune.rodano.mi.it;83503550150;;;link albo non trovato
+015188;Rosate;www.comune.rosate.mi.it;82000610152;https://rosate.trasparenza-valutazione-merito.it/web/trasparenza/dettaglio-albo-pretorio?p_p_id=jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_count=1&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page-parent=0&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-pag;jcitygov;
+015189;Rozzano;www.comune.rozzano.mi.it;01743420158;https://trasparenza.comune.rozzano.mi.it/web/trasparenza/albo-pretorio;jcitygov;
+015191;San Colombano al Lambro;www.comune.sancolombanoallambro.mi.it;84503820155;https://sancolombanoallambro.trasparenza-valutazione-merito.it/web/trasparenza/menu-albo-pretorio;jcitygov;
+015192;San Donato Milanese;www.comune.sandonatomilanese.mi.it;00828590158;;;link albo non trovato
+015194;San Giorgio Su Legnano;www.comune.sangiorgiosulegnano.mi.it;01401970155;https://comune.sangiorgiosulegnano.mi.it/documenti/3088882/albo-pretorio;sconosciuta;
+015195;San Giuliano Milanese;www.comune.sangiulianomilanese.mi.it;00798940151;https://sgm.trasparenza-valutazione-merito.it:443/web/trasparenza/albo-pretorio;jcitygov;
+015200;Santo Stefano Ticino;www.comune.santostefanoticino.mi.it;02941420156;;;The read operation timed out
+015201;San Vittore Olona;www.comune.sanvittoreolona.mi.it;01175480159;https://portale.comune.sanvittoreolona.mi.it/openweb/albo/albo_pretorio.php;sconosciuta;albo non raggiungibile: HTTP Error 403: Forbidden
+015202;San Zenone al Lambro;www.comune.sanzenoneallambro.mi.it;84504020151;https://sanzenoneallambro.trasparenza-valutazione-merito.it:443/web/trasparenza/albo-pretorio;jcitygov;
+015204;Sedriano;www.comune.sedriano.mi.it;86003630158;https://dgegovpa.it/SEDRIANO/albo/albo;dgegovpa;
+015205;Segrate;www.comune.segrate.mi.it;83503670156;https://segrate.comuneweb.it/ServiziOnLine/AlboPretorio/AlboPretorio;comuneweb;albo non raggiungibile: <urlopen error timed out>
+015206;Senago;www.comune.senago.mi.it;03519480150;;;<urlopen error [Errno 104] Connection reset by peer>
+015209;Sesto San Giovanni;www.comune.sestosangiovanni.mi.it;02253930156;https://servizi-sestosangiovanni.e-pal.it/AlboOnline/ricercaAlbo;e-pal;
+015210;Settala;www.comune.settala.mi.it;83503490159;https://www.halleyweb.com/c015210/mc/mc_gridev_messi.php#new_tab;halley;albo non raggiungibile: <urlopen error [Errno 104] Connection reset by peer>
+015211;Settimo Milanese;www.comune.settimomilanese.mi.it;01315140150;;;<urlopen error [Errno 104] Connection reset by peer>
+015213;Solaro;www.comune.solaro.mi.it;01549700159;;;link albo non trovato
+015219;Trezzano Rosa;www.comune.trezzanorosa.mi.it;83502090158;https://trezzanorosa.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio;jcitygov;
+015220;Trezzano Sul Naviglio;www.comune.trezzano-sul-naviglio.mi.it;03029240151;https://trezzano.e-pal.it/AlboOnline/ricercaAlbo;e-pal;
+015221;Trezzo Sull'Adda;www.comune.trezzosulladda.mi.it;83502130152;https://trezzosulladda.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio;jcitygov;
+015222;Tribiano;www.comune.tribiano.mi.it;84503590154;http://dgegovpa.it/Tribiano/Albo/Albo.aspx;dgegovpa;albo non raggiungibile: HTTP Error 503: Service Unavailable
+015224;Truccazzano;www.comune.truccazzano.mi.it;83502350156;https://truccazzano.halleyegov.it/redirect.html?F=MC09;halley-eg;
+015226;Turbigo;www.comune.turbigo.mi.it;86004290150;https://www.servizipubblicaamministrazione.it/servizi/saturnweb/Home.aspx?Ce=trbg853;saturnweb;
+015249;Vanzaghello;www.comune.vanzaghello.mi.it;02937320154;https://comune.vanzaghello.mi.it/documento/albo-pretorio-online/;sconosciuta;
+015229;Vanzago;www.comune.vanzago.mi.it;03351920156;https://servizionline.comune.vanzago.mi.it/cmsvanzago/portale/albopretorio/albopretorioconsultazione.aspx?P=400;sicraweb-cms;
+015230;Vaprio d'Adda;www.comune.vapriodadda.mi.it;03614850158;https://vapriodadda.halleyegov.it/redirect.html?F=MC09;halley-eg;
+015236;Vernate;www.comune.vernate.mi.it;80100350158;http://vernate.trasparenza-valutazione-merito.it/web/trasparenza/albo-pretorio;jcitygov;
+015237;Vignate;www.comune.vignate.mi.it;83504710159;;;<urlopen error [Errno 104] Connection reset by peer>
+015248;Villa Cortese;comune.villacortese.mi.it;01008750158;http://portale.comune.villacortese.mi.it/openweb/albo/albo_pretorio.php;sconosciuta;albo non raggiungibile: HTTP Error 404: Not Found
+015242;Vimodrone;www.comune.vimodrone.mi.it;07430220157;;;<urlopen error [Errno 104] Connection reset by peer>
+015243;Vittuone;www.comune.vittuone.mi.it;00994350155;https://albo.comune.vittuone.mi.it/cmsvittuone/servizionline.aspx;sconosciuta;
+015244;Vizzolo Predabissi;www.comune.vizzolopredabissi.mi.it;84503700159;;;<urlopen error [Errno 104] Connection reset by peer>
+015247;Zibido San Giacomo;www.comune.zibidosangiacomo.mi.it;80102330158;http://www.halleyweb.com/c015247/index.php?servizio=304;halley;albo non raggiungibile: [Errno 104] Connection reset by peer
+015251;Vermezzo Con Zelo;www.comune.vermezzoconzelo.mi.it;10708190961;https://cloud.urbi.it/urbi/progs/urp/ur1ME002.sto?DB_NAME=n1231753;sconosciuta;
