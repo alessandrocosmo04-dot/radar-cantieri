@@ -33,7 +33,7 @@ DI_PERSONA = re.compile(r"\b(RICHIEDENTE|PROPRIET[AÀ] DI|PRESENTAT[AO] DA|INTES
 PERSONALI = (r"\b(a carico di|deposito (dell')?atto|notific\w*|intimazione|sig\.?r?a?\.?\s+[A-Z]|signor[ae]?\b|abusi edilizi|abuso edilizio|"
              r"ingiunzione|demolizione d'ufficio|decesso|eredi|nato a|nata a|codice fiscale [A-Z]{6}\d{2}|ritiro (del )?veicolo|matrimoni\w*|"
              r"graduatori\w*|art\.?\s?(60|140|143) del (d\.?p\.?r|c\.?p\.?c)|d\.?p\.?r\.? 600/73|contingibil\w*|propriet[aà] (di|del sig|della sig)|beneficiari|scia n\.? ?\d+|mozione|interrogazione|conguagl\w*|assegnazione del contributo)")
-SEMPRE_FUORI = r"liquidazione (degli |di )?incentivi|avviso di selezione|selezione pubblica per|restituzione (di )?(parte )?(della )?somm|defibrillator|traslochi|trasloco|stalli di sosta|diritti di segreteria|sponsorizzazion|\bconvocazione\b|ponte radio|trasporto e smaltimento|magazzino comunale|\bpums\b|piano urbano della mobilit|piano generale del traffico"
+SEMPRE_FUORI = r"liquidazione (degli |di )?incentivi|avviso di selezione|selezione pubblica per|restituzione (di )?(parte )?(della )?somm|defibrillator|traslochi|trasloco|stalli di sosta|diritti di segreteria|sponsorizzazion|\bconvocazione\b|ponte radio|trasporto e smaltimento|magazzino comunale|\bpums\b|piano urbano della mobilit|piano generale del traffico|potatur\w*|sgombero neve|telecamer\w*|videosorveglianz\w*|impiant\w* (di )?allarme|antintrusione|dissuasor\w*|zebrature|\brouter\b|videoproiettor\w*|licenze fiscali|bilancio consolidato|perimetro di consolidamento|variazione (di )?esigibilit|verifica a campione dei requisiti|liquidazione dell.incentivazione|concorso pubblico|voltura catastale|apparato radio|pratiche tecnico.amministrative|ispezione e controllo degli impianti"
 CATEGORIE_ESCLUSE = r"abusi|messi|matrimon|anagrafe|stato civile|notific|deposit|concors|personale|elezion|mozion"
 
 FASI = [
@@ -99,7 +99,7 @@ def fase(o):
 
 VIABILITA = r"\b(divieto di (transito|sosta)|chiusura (temporanea )?(al|del) transito|interruzione (temporanea )?(e parziale )?al transito|restringimento (stradale|della carreggiata|di carreggiata)|occupazione (temporanea )?(di )?suolo pubblico|ordinanza omnibus|divieto temporaneo (di |della )?circola\w*)\b"
 CANTIERE_PRIVATO = r"\b(lavori edili|gru|ponteggi\w*|cantiere edile|autogru|piattaforma aerea|getto (di )?calcestruzzo|scavi|esecuzione di lavori|fine lavori|per lavori|impresa|societ[aà]|ditta|condominio)\b"
-NON_CANTIERE = r"\b(rete idrica|rete (del )?gas|acquedotto|fibra|sottoservizi|traslochi|trasloco|stalli di sosta|manifestazion\w*|mercat\w*|corteo|processione|gara ciclistica|fiera)\b"
+NON_CANTIERE = r"\b(potatur\w*|abbattimento (di )?(piante|alberi)|sfalcio|zebrature|rete idrica|rete (del )?gas|acquedotto|fibra|sottoservizi|traslochi|trasloco|stalli di sosta|manifestazion\w*|mercat\w*|corteo|processione|gara ciclistica|fiera)\b"
 VIA = re.compile(r"\b((?:VIA|VIALE|PIAZZA|PIAZZALE|CORSO|LARGO|VICOLO|STRADA)\s+[A-Z0-9][A-Z0-9'’\.\s]*?"
                  r"(?:,?\s+(?:ALTEZZA\s+|FRONTE\s+)?(?:CIVIC[OI]\s*|CIV\.?\s*|N\.?\s*)?\d+[A-Z]?(?:\s*[\-/]\s*\d+)?)?)"
                  r"(?=\s*(?:,|-|–|\(|\bIL\b|\bDAL\b|\bDALLE\b|\bPER\b|\bIN\b|\bFRONTE\b|\bALTEZZA\b|\bANGOLO\b|\bNEL\b|\bTRA\b|$))")

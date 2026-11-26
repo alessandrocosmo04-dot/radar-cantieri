@@ -1,0 +1,200 @@
+{
+ "n_campione": 355,
+ "n_strato_neg_totale": 683,
+ "segnale_si_no": {
+  "precisione": 0.9611650485436893,
+  "richiamo": 0.8381023331414447,
+  "f1": 0.8954251912953818,
+  "veri_positivi_stimati": 99.0,
+  "falsi_positivi_stimati": 4.0,
+  "falsi_negativi_stimati": 19.124,
+  "ic95": {
+   "precisione": [
+    0.922,
+    0.99
+   ],
+   "richiamo": [
+    0.749,
+    0.926
+   ],
+   "f1": [
+    0.839,
+    0.951
+   ]
+  },
+  "veri_nel_campione": 106
+ },
+ "opera_pubblica": {
+  "precisione": 0.84375,
+  "richiamo": 0.7642230399094254,
+  "f1": 0.8020199019753453,
+  "veri_positivi_stimati": 54.0,
+  "falsi_positivi_stimati": 10.0,
+  "falsi_negativi_stimati": 16.66,
+  "ic95": {
+   "precisione": [
+    0.75,
+    0.923
+   ],
+   "richiamo": [
+    0.639,
+    0.903
+   ],
+   "f1": [
+    0.712,
+    0.883
+   ]
+  },
+  "veri_nel_campione": 62
+ },
+ "urbanistica": {
+  "precisione": 0.625,
+  "richiamo": 0.5726065048098947,
+  "f1": 0.5976571838393498,
+  "veri_positivi_stimati": 5.0,
+  "falsi_positivi_stimati": 3.0,
+  "falsi_negativi_stimati": 3.732,
+  "ic95": {
+   "precisione": [
+    0.25,
+    1.0
+   ],
+   "richiamo": [
+    0.201,
+    1.0
+   ],
+   "f1": [
+    0.254,
+    0.9
+   ]
+  },
+  "veri_nel_campione": 7
+ },
+ "cantiere_privato": {
+  "precisione": 1.0,
+  "richiamo": 0.8003717856036352,
+  "f1": 0.8891183387827682,
+  "veri_positivi_stimati": 31.0,
+  "falsi_positivi_stimati": 0.0,
+  "falsi_negativi_stimati": 7.732,
+  "ic95": {
+   "precisione": [
+    1.0,
+    1.0
+   ],
+   "richiamo": [
+    0.641,
+    0.943
+   ],
+   "f1": [
+    0.781,
+    0.971
+   ]
+  },
+  "veri_nel_campione": 37
+ },
+ "tipo_corretto_fra_veri_segnalati": 0.9090909090909091,
+ "errori": [
+  {
+   "vero": "opera_pubblica",
+   "previsto": null,
+   "oggetto": "NOMINA RUP E AFFIDAMENTO DIRETTO AI SENSI DELL'ART. 50, COMMA 1, LETT. B, DEL D. LGS. N. 36/2023 DEL SERVIZIO DI INGEGNERIA E ARCHITETTURA CONCERNENTE IL COORDI"
+  },
+  {
+   "vero": "cantiere_privato",
+   "previsto": "opera_pubblica",
+   "oggetto": "AUTORIZZAZIONE IN DEROGA AI SENSI DELL’ART. 6, COMMA 1, LETTERA H) DELLA LEGGE 447/95 AI VALORI LIMITE DI IMMISSIONE ACUSTICA PRODOTTA DA ATTIVITÀ DI CANTIERE P"
+  },
+  {
+   "vero": null,
+   "previsto": "opera_pubblica",
+   "oggetto": "IMPEGNO E LIQUIDAZIONE DI € 80,79 RELATIVI A LAVORI STRAORDINARI ESEGUITI PRESSO UNITÀ IMMOBILIARI DI PROPRIETÀ COMUNALE AMMINISTRATE DA PRIVATI. RIPRISTINO BAL"
+  },
+  {
+   "vero": "cantiere_privato",
+   "previsto": "opera_pubblica",
+   "oggetto": "INTERRUZIONE TEMPORANEA E PARZIALE AL TRANSITO IN VIA RIBOLDI IN CORRISPONDENZA DELL'INTERSEZIONE ROTATORIA CON VIA DALLA CHIESA IL 20/11/2026 PER LAVORI DI MAN"
+  },
+  {
+   "vero": null,
+   "previsto": "opera_pubblica",
+   "oggetto": "ASSUNZIONE IMPEGNO DI SPESA E CONTESTUALE LIQUIDAZIONE DI € 470,67 RELATIVI A LAVORI STRAORDINARI ESEGUITI PRESSO UNITÀ IMMOBILIARI DI PROPRIETÀ COMUNALE AMMINI"
+  },
+  {
+   "vero": "cantiere_privato",
+   "previsto": "opera_pubblica",
+   "oggetto": "RIQUALIFICAZIONE TRANVIA EXTRAURBANA MILANO - LIMBIATE - RESTRINGIMENTO STRADALE IN VIA SS 35 DEI GIOVI, NEL TRATTO COMPRESO TRA LE VIE PUECHER E ROMA, DAL 19/1"
+  },
+  {
+   "vero": "cantiere_privato",
+   "previsto": "opera_pubblica",
+   "oggetto": "Lavori Duereti - chiusura temporanea di via del Ciliegio, via dell'Olmo e via dell'Ibisco per lavori di asfaltatura"
+  },
+  {
+   "vero": "urbanistica",
+   "previsto": null,
+   "oggetto": "ABUSI E TITOLI EDILIZI OTTOBRE 2026"
+  },
+  {
+   "vero": "opera_pubblica",
+   "previsto": null,
+   "oggetto": ": AUTORIZZAZIONE AL SOGGETTO FINANZIATORE DEL RTI AGGIUDICATARIO – BCC LEASING S.P.A.\", CON SEDE IN ROMA (RM), VIA LUCREZIAROMANA N. 41/47 - CODICE FISCALE 0282"
+  },
+  {
+   "vero": "urbanistica",
+   "previsto": "opera_pubblica",
+   "oggetto": "AUTORIZZAZIONE DEL PROGETTO DI BONIFICA A SEGUITO DELLA CONCLUSIONE DELLA CONFERENZA DI SERVIZI DECISORIA INDETTA CON PROCEDURA ORDINARIA AI SENSI DELL'ART.242 "
+  },
+  {
+   "vero": "opera_pubblica",
+   "previsto": "urbanistica",
+   "oggetto": "DETERMINA N.976 DEL 20/11/2026 - AREA TECNICA: RIGENERAZIONE URBANA PER LA RIQUALIFICAZIONE DELLA SCUOLA MEDIA A. MANZONI CON FORMAZIONE DI AREE FINALIZZATE ALL"
+  },
+  {
+   "vero": "cantiere_privato",
+   "previsto": "opera_pubblica",
+   "oggetto": "RESTRINGIMENTO STRADALE IN VIALE DELLA REPUBBLICA FRONTE CIV. 24 DAL 18/11/2026 A FINE LAVORI PER INTERVENTO DI MANUTENZIONE URGENTE ALLA RETE IDRICA."
+  },
+  {
+   "vero": "opera_pubblica",
+   "previsto": "urbanistica",
+   "oggetto": "DETERMINA N.975 DEL 20/11/2026 - AREA TECNICA: RIGENERAZIONE URBANA PER LA RIQUALIFICAZIONE DELLA SCUOLA MEDIA A. MANZONI CON FORMAZIONE DI AREE FINALIZZATE ALL"
+  },
+  {
+   "vero": null,
+   "previsto": "opera_pubblica",
+   "oggetto": "APPROVAZIONE CONTRATTO ATTUATIVO N. 2 RELATIVO AL SERVIZIO DI 'VERIFICHE PERIODICHE IMPIANTI ELETTRICI DI MESSA A TERRA PRESSO GLI IMMOBILI DI EDILIZIA RESIDENZ"
+  },
+  {
+   "vero": "opera_pubblica",
+   "previsto": null,
+   "oggetto": "CONTRATTO DI PARTENARIATO PUBBLICO-PRIVATO, AI SENSI DELL'ART. 183, COMMA 15, DEL D. LGS. N. 50/2016, AVENTE AD OGGETTO LA PROGETTAZIONE, REALIZZAZIONE, MANUTEN"
+  },
+  {
+   "vero": "opera_pubblica",
+   "previsto": null,
+   "oggetto": "AVVISO ESITO AFFIDAMENTO DIRETTO FORNITURA E POSA IN OPERA DI SERVOSCALA PRESSO SCUOLA SECONDARIA DON MINZONI DI PIAZZA HIROSHIMA 4 - CPV 45313100-5 - CIG BD3BD"
+  },
+  {
+   "vero": "opera_pubblica",
+   "previsto": "urbanistica",
+   "oggetto": "REALIZZAZIONE DI CABINA E-DISTRIBUZIONE IN VIA PIAGGIO - APPROVAZIONE PROGETTO OPERE A SCOMPUTO RELATIVO AL PERMESSO DI COSTRUIRE CONVENZIONATO N. 26/2024"
+  },
+  {
+   "vero": "opera_pubblica",
+   "previsto": null,
+   "oggetto": "“PROGETTO DI ALLEGGERIMENTO RETE FOGNARIA E GESTIONE ACQUE METEORICHE MEDIANTE NBS IN VIA M. DI CANOSSA E DEIMPERMEABILIZZAZIONE E RIFORESTAZIONE DELL'EX PIATTA"
+  },
+  {
+   "vero": "cantiere_privato",
+   "previsto": null,
+   "oggetto": "DETERMINAZIONE DI ACCERTAMENTO D'ENTRATA DELLA SOMMA DI EURO 190.481,90 IVA INCLUSA QUALE CORRISPETTIVO DOVUTO AL COMUNE DI CINISELLO BALSAMO PER LA CONCESSIONE"
+  },
+  {
+   "vero": null,
+   "previsto": "opera_pubblica",
+   "oggetto": "SERVIZIO BIENNALE RINNOVABILE PER L'INTEGRAZIONE, L'AGGIORNAMENTO E IL MONITORAGGIO CONTINUO DEL CENSIMENTO DEL PATRIMONIO ARBOREO COMUNALE - APPROVAZIONE PERIZ"
+  }
+ ],
+ "nota": "Campione di sviluppo: le regole sono state scritte guardando questi stessi atti, quindi le metriche sono ottimistiche. La misura fuori campione e' in metriche_fuori_campione (atti di comuni e giorni nuovi)."
+}

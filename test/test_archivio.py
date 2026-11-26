@@ -47,6 +47,33 @@ class TestArchivio(unittest.TestCase):
             self.assertEqual(len(list(csv.reader(fh, delimiter=";"))), 2)
 
 
+    def test_versioni_point_in_time(self):
+        A.salva_segnali(self.db, [segnale("1", "progetto")], "2026-11-25")
+        A.salva_segnali(self.db, [segnale("1", "progetto")], "2026-11-26")      # uguale: nessuna nuova versione
+        A.salva_segnali(self.db, [segnale("1", "affidamento")], "2026-11-27")   # cambia fase: nuova versione
+        v = self.db.execute("SELECT valida_dal, fase, motivo FROM versioni ORDER BY valida_dal").fetchall()
+        self.assertEqual([tuple(x) for x in v], [("2026-11-25", "progetto", "prima_vista"), ("2026-11-27", "affidamento", "riletto")])
+
+    def test_riclassifica_scarta_ma_conserva(self):
+        A.salva_segnali(self.db, [segnale("1"), segnale("2")], "2026-11-25")
+        finto = lambda a: None if a["oggetto"].endswith("2") else {"tipo": "opera_pubblica", "fase": "collaudo", "cup": "E62B26000380004"}
+        self.assertEqual(A.riclassifica(self.db, finto, "2026-11-28"), (1, 1))
+        f = os.path.join(self.dir, "e.csv")
+        self.assertEqual(A.esporta(self.db, f), 1)
+        self.assertEqual(self.db.execute("SELECT scartato_il FROM segnali WHERE id='2'").fetchone()[0], "2026-11-28")
+        self.assertEqual(self.db.execute("SELECT COUNT(*) FROM versioni WHERE id='2'").fetchone()[0], 2)
+
+    def test_archivio_vecchio_si_aggiorna(self):
+        vecchio = os.path.join(self.dir, "v.db")
+        c = sqlite3.connect(vecchio)
+        c.executescript(A.SCHEMA.split(";")[0].replace(" scartato_il TEXT,", "") + ";")
+        c.execute("INSERT INTO segnali (istat, piattaforma, id, tipo, prima_vista, ultima_vista) VALUES ('1','p','9','opera_pubblica','2026-11-20','2026-11-20')")
+        c.commit(); c.close()
+        db = A.apri(vecchio)
+        self.assertEqual(db.execute("SELECT valida_dal, tipo FROM versioni").fetchone()[:], ("2026-11-20", "opera_pubblica"))
+        db.close()
+
+
 class TestGiro(unittest.TestCase):
     def setUp(self):
         self._get, self._mappa = C.get, radar.mappa

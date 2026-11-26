@@ -1,0 +1,1360 @@
+{
+ "descrizione": "150 segnali estratti a caso (seed 11) fra quelli raccolti il 2026-11-26 da comuni e atti mai visti durante lo sviluppo. Etichetta: il segnale e' davvero un lavoro, un cantiere o un atto urbanistico? Misura la precisione fuori campione. Il richiamo fuori campione non si puo' misurare qui perche' degli atti scartati non conserviamo il testo (privacy).",
+ "precisione": 0.8133333333333334,
+ "ic95_wilson": [
+  0.743,
+  0.868
+ ],
+ "atti": [
+  {
+   "comune": "San Donato Milanese",
+   "oggetto": "MD IMPIANTI SRLS - ACCORDO QUADRO MANUTENZIONE IMPIANTI DI ALLARME EDIFICI DI PROPRIETA' E TELECAMERE PERIMETRALI ESTERNE DEGLI EDIFICI SCOLASTICI - CIG PADRE: BABE54B2B0 - AFFIDAMENTO 2° CONTRATTO ATTUATIVO - CUP:J54D26004300004 - CIG: BDAE132FDC",
+   "categoria": "REGISTRO DELLE DETERMINE",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cologno Monzese",
+   "oggetto": "INTEGRAZIONE IMPEGNO DI SPESA N. 172340/2026 - DETERMINAZIONE N. 135 DEL 29/01/2026 - ASSUNZIONE DELLA SPESA NECESSARIA PER L'ESECUZIONE DEGLI INTERVENTI DI MANUTENZIONE STRAORDINARIA DEGLI IMPIANTI TERMICI DI CUI AL SERVIZIO ENERGIA IN ESSERE CON LA SOCIETA' A.T.E.S. PER L'ANNO 2026 - CIG: BA0E5CD7C3",
+   "categoria": "",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "San Giuliano Milanese",
+   "oggetto": "APPROVAZIONE PROGETTO ESECUTIVO AI SENSI DEGLI ARTT. 41 E 42 DEL D. LGS. 36/2023 E S.M.I. PER LA MANUTENZIONE STRAORDINARIA STRADE E MARCIAPIEDI ANNO 2026 - CUP E87H24001040004",
+   "categoria": "ATTI",
+   "sottocategoria": "DELIBERE DI GIUNTA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "San Donato Milanese",
+   "oggetto": "SCUOLA PRIMARIA \"MAZZINI\" VIA KENNEDY - MANUTENZIONE STRAORDINARIA SERRAMENTI E VENEZIANE - CUP: J52B26002340004 - ACCORDO QUADRO PER SERVIZI DI ARCHITETTURA E INGEGNERIA PER SUPPORTO AL RUP IN MATERIA DI VERIFICA DELLA PROGETTAZIONE, CONTROLLO TECNICO, DUE DILIGENCE TECNICA - CIG PADRE: B5E65E33B8 - (OPP2025_H) - QSC SRL CONTRATTO ATTUATIVO N. 06 VERIFICA PROGETTO ESECUTIVO SCUOLA PRIMARIA \"MAZZINI\" VIA KENNEDY - MANUTENZIONE STRAORDINARIA SERRAMENTI E VENEZIANE - CUP J52B26002340004 - CIG BDCCCAC42C",
+   "categoria": "REGISTRO DELLE DETERMINE",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Sesto San Giovanni",
+   "oggetto": "AFFIDAMENTO TRAMITE ACCORDO QUADRO DELL'APPALTO DI LAVORI PER LA MANUTENZIONE STRAORDINARIA DEL CIMITERO MONUMENTALE NEL COMUNE DI SESTO SAN GIOVANNI. AGGIUDICAZIONE ALLA SOCIETA' F.LLI PICENNI S.N.C.. CIG PADRE: BC46DD828D - CUP C42E25000500004 APPROVAZIONE 1° CONTRATTO ATTUATIVO. CIG FIGLIO: BD5E49C707 - RICOGNIZIONE IMPEGNI DI SPESA AL FINE DELLA MODIFICA DEL CRONOPROGRAMMA E COSTITUZIONE FPV - FONDO PLURIENNALE VINCOLATO",
+   "categoria": "DETERMINAZIONI",
+   "sottocategoria": "SETTORE SERVIZI CIMITERIALI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Gorgonzola",
+   "oggetto": "ISTITUZIONE DI SENSO UNICO ALTERNATO IN VIA ADDA, VIA TICINO E VIA 1° MAGGIO E INTERDIZIONE DEL TRANSITO CICLOPEDONALE IN VIA 1° MAGGIO DAL GIORNO 16 AL GIORNO 21 NOVEMBRE 2026 PER RIPRISTINI DEFINITIVI PER CONTO DI CITTA' METROPOLITANA DI MILANO #",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "ORDINANZE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cusano Milanino",
+   "oggetto": "DETERMINAZIONE A CONTRATTARE E AFFIDAMENTO DIRETTO, AI SENSI DELL'ART. 50, COMMA 1, LETT. A) DEL D.LGS N.36/2023, DEI LAVORI DI ULTIMAZIONE DEL PARCHEGGIO INTERRATO DI PIAZZA CAVOUR ALLA DITTA ELCOTEM IMPIANTI SRL PER UN IMPORTO DI €. 38.810,53 OLTRE IVA 22% - CIG BDCF505FEB",
+   "categoria": "Determinazione",
+   "sottocategoria": "Settore Gestione del Territorio ed Ambiente",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cuggiono",
+   "oggetto": "MODIFICA DEL CONTRATTO IN CORSO DI ESECUZIONE AI SENSI DELL'ART. 120 DEL D.LGS. 36/2023 – INTEGRAZIONE DEI LAVORI RELATIVI AGLI INTERVENTI PRIORITARI PER IL CONTENIMENTO DELLA SPECIE ESOTICA INVASIVA ASCLEPIAS SYRIACA PRESSO IL PARCO STORICO DI VILLA ANNONI – CIG BCC8FBB986 – CUP E51G26000060001",
+   "categoria": "determina responsabile di area",
+   "sottocategoria": "AREA AMMINISTRATIVA SEGR",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Sesto San Giovanni",
+   "oggetto": "AFFIDAMENTO DELL'APPALTO INTEGRATO PER LA PROGETTAZIONE ED ESECUZIONE DEI \"LAVORI DI MESSA IN SICUREZZA VIABILITA' IN COMUNE DI SESTO SAN GIOVANNI - INTERVENTI DI RIQUALIFICAZIONE E MESSA IN SICUREZZA CAVALCAVIA BUONARROTI\" - INTEGRAZIONE DELLA DETERMINAZIONE DIRIGENZIALE 1795 DEL 09/11/2026",
+   "categoria": "DETERMINAZIONI",
+   "sottocategoria": "UFFICIO AMMINISTRATIVI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Senago",
+   "oggetto": "INTEGRAZIONE N.2 DELL’IMPEGNO DI SPESA ASSUNTO CON DETERMINAZIONE N. 965 DEL 03/12/2025 E DETERMINAZIONE N. 678 DEL 25/08/2026, AVENTE AD OGGETTO L’ “AFFIDAMENTO DIRETTO TRAMITE RICHIESTA DI OFFERTA (RDO), AI SENSI DELL’ART. 50, C.1, LETT. B) DEL D.LGS. 36/2023, PER IL SERVIZIO DI COORDINAMENTO DELLA SICUREZZA IN FASE DI ESECUZIONE E DIREZIONE LAVORI PER L’INTERVENTO DI ADEGUAMENTO DELLA PISTA DI ATLETICA LEGGERA DEL CENTRO SPORTIVO COMUNALE DI SENAGO (MI)”. CUP: E12H25000180004 CIG: B95802D47C",
+   "categoria": "ATTI",
+   "sottocategoria": "DETERMINE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cuggiono",
+   "oggetto": "ISTITUZIONE TEMPORANEA DEL DIVIETO DI SOSTA CON RIMOZIONE FORZATA IN VIA MATTEOTTI 10/12 PER L'ESECUZIONE DI LAVORI EDILIZI.",
+   "categoria": "Ordinanza",
+   "sottocategoria": "AREA POLIZIA LOCALE",
+   "tipo_al_momento_della_raccolta": "cantiere_privato",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "cantiere_privato"
+  },
+  {
+   "comune": "Castano Primo",
+   "oggetto": "AVVISO DI RILASCIO DEL PERMESSO DI COSTRUIRE N. 39/2025",
+   "categoria": "AVVISI",
+   "sottocategoria": "PERMESSO DI COSTRUIRE",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "San Donato Milanese",
+   "oggetto": "MODIFICHE ALLA CIRCOLAZIONE STRADALE IN VIA LORENZO MILANI, VIA SCHUSTER E VIA UNICA SORIGHERIO - LAVORI DI POSA DI NUOVA LINEA ELETTRICA BT A 400 V.",
+   "categoria": "REGISTRO DELLE DETERMINE",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Novate Milanese",
+   "oggetto": "VII CONTRATTO ATTUATIVO PER I LAVORI DI MANUTENZIONE PER LE OPERE DA FABBRO, VETRAIO E SERRAMENTISTA NEGLI IMMOBILI COMUNALI",
+   "categoria": "DETERMINA DIRIGENZIALE",
+   "sottocategoria": "SETTORE LAVORI PUBBLICI - MANUTENZIONI - GESTIONE VERDE PUBBLICO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cinisello Balsamo",
+   "oggetto": "RICHIESTA DI PATROCINIO CON CONTRIBUTO ED UTILIZZO GRATUITO DEGLI SPAZI DA PARTE DELLA A.S.D. ISAO OKANO CLUB 97 DI CINISELLO BALSAMO PER LA REALIZZAZIONE DELL'EVENTO \"TERZO TORNEO INTERNAZIONALE DI SAMBO - CITTA' DI CINISELLO BALSAMO\" IN PROGRAMMA PRESSO IL PALAZZETTO S.ALLENDE IL 5 E 6 DICEMBRE 2026.",
+   "categoria": "Atti della Giunta",
+   "sottocategoria": "Politiche Culturali e Sport - Giunta Comunale 2026/325",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": null
+  },
+  {
+   "comune": "Castano Primo",
+   "oggetto": "INTERVENTI DI MANUTENZIONE STRAORDINARIA DI PIAZZA GARIBALDI ED AREE LIMITROFE – CUP H17H26000690006. APPROVAZIONE DOCUMENTO DI INDIRIZZO ALLA PROGETTAZIONE (D.I.P.)",
+   "categoria": "ATTI",
+   "sottocategoria": "DELIBERE DI GIUNTA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Trezzo Sull'Adda",
+   "oggetto": "AVVISO DI AVVENUTO RILASCIO PERMESSO DI COSTRUIRE 2026/00012/PC",
+   "categoria": "AVVISI",
+   "sottocategoria": "AVVISO",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "Basiglio",
+   "oggetto": "ORDINANZA DIRIGENZIALE N.64 DEL 11/11/2026 - UFFICIO POLIZIA LOCALE: DISCIPLINA DELLA CIRCOLAZIONE STRADALE PER IL POSIZIONAMENTO DI UN AUTOCARRO CON AUTOPOMPA UTILE ALLO SVOLGIMENTO DI LAVORI EDILI, IN VIA DANTE ALIGHIERI NEL TRATTO COMPRESO TRA IL CIV. 1 ED IL CIV.5 DALLE ORE 08:00 DEL GIORNO 13 NOVEMBRE 2026 ALLE ORE 16:00 DEL GIORNO 14 NOVEMBRE 2026 .",
+   "categoria": "",
+   "sottocategoria": "ATTI UFF. POLIZIA LOCALE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Rho",
+   "oggetto": "SSUS: AZIONE 1-04 - AL DI LÀ DELL STAZIONE - LA CONNESSIONE CICLABILE TRA LUCERNATE E LO STECCONE - CUP C41B22002090006 - INCARICO SOC. SERTEC ENGINEERING CONSULTING SRL IN R.T.P. PER ATTIVAZIONE OPZIONE ATTIVITÀ DI DIREZIONE LAVORI (DL) E COORDINAMENTO DELLA SICUREZZA IN FASE DI ESECUZIONE (CSE) - CIG B35D0B9AE7 (DETERMINA/2026/1362/26-11-2026)",
+   "categoria": "Determinazioni del Resposabile",
+   "sottocategoria": "COMUNE DI RHO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Senago",
+   "oggetto": "APPROVAZIONE COLLAUDO TECNICO AMMINISTRATIVO OPERE DI URBANIZZAZIONE REALIZZATE IN AMBITO D’ATTUAZIONE DEL PIANO INTEGRATO D’INTERVENTO “P.I.I. SENAGHINO - DE GASPERI” DI CUI ALLA CONVENZIONE IN DATA 29.04.2009 REP/RACC 83689/22522 _ COMPARTO 2 OPERATORI 2 E 3: PROLUNGAMENTO VIA LONDRA",
+   "categoria": "ATTI",
+   "sottocategoria": "DETERMINE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Corbetta",
+   "oggetto": "ORDINANZA DIRIGENZIALE N.211 DEL 18/11/2026 - POLIZIA LOCALE: LAVORI IN VIA DELLA CANTALUPETTA 3",
+   "categoria": "ORDINANZE DIRIGENZIALI",
+   "sottocategoria": "SETTORE SICUREZZA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Arluno",
+   "oggetto": "ORDINANZA PER PROVVEDIMENTI TEMPORANEI IN ORDINE ALLA CIRCOLAZIONE STRADALE PER LAVORI EDILI IN VIA MARCONI 1 DALLE ORE 07:00 ALLE ORE 18:00 DEL 30/11/2026",
+   "categoria": "Ordinanze",
+   "sottocategoria": "Area Polizia Locale",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Trezzano Sul Naviglio",
+   "oggetto": "AFFIDAMENTO DIRETTO LAVORI DI RIQUALIFICAZIONE ILLUMINAZIONE LED CAMPO DI ALLENAMENTO CAMPO FABBRI E DELL'ILLUMINAZIONE ESTERNA PORTICATO CENTRO SOCIO CULTURALE E PARCO CLIVIA NEL COMUNE DI TREZZANO SUL NAVIGLIO (MI), ALLA DITTA ELETTRA SAS DI VANNI IVANO & C. - CIG BDB28EC0AE.",
+   "categoria": "REGISTRO DELLE DETERMINE",
+   "sottocategoria": "SERVIZIO LAVORI PUBBLICI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Bussero",
+   "oggetto": "ORDINANZA DIRIGENZIALE N.78 DEL 18/11/2026 - POLIZIA LOCALE: ISTITUZIONE SEGNALETICA TEMPORANEA PER LAVORI DI POTATURA PIANTE IN BUSSERO",
+   "categoria": "ORDINANZE",
+   "sottocategoria": "RESPONSABILE SETTORE SICUREZZA POLIZIA LOCALE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Bollate",
+   "oggetto": "VERIFICA A CAMPIONE DEI REQUISITI DI ORDINE GENERALE DI CUI AGLI ARTT. 94, 95 E 98 DEL D.LGS. 36/23 SS.MM.II. DEGLI OPERATORI ECONOMICI DESTINATARI DI AFFIDAMENTI DIRETTI DI LAVORI, SERVIZI E FORNITURE INFERIORI AD € 40.000,00 - SORTEGGIO TERZO TRIMESTRE 2026 (LUGLIO – SETTEMBRE)",
+   "categoria": "",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Baranzate",
+   "oggetto": "REALIZZAZIONE PARCHEGGIO IN PROSSIMITA’ DELLA NUOVA 'RESIDENZA HOUSING SOCIALE” IN VIA SAURO N.73, CUP C95I26000100004. APPROVAZIONE P.F.T.E.",
+   "categoria": "DELIBERA GIUNTA",
+   "sottocategoria": "DELIBERA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Paullo",
+   "oggetto": "IMPEGNO DI SPESA E LIQUIDAZIONE A FAVORE DELLA DITTA PAVESI SERRAMENTI DI PAVESI FABIO PER INTERVENTI DI MANUTENZIONI VARIE PRESSO I PLESSI COMUNALI DEL COMUNE DI PAULLO – CIG BDE8093BF8",
+   "categoria": "DETERMINAZIONI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Lainate",
+   "oggetto": "IMPEGNO DI SPESA E AFFIDAMENTO INCARICO PER TRASCRIZIONE PRESSO IL COMPETENTE UFFICIO DELL’AGENZIA DELLE ENTRATE E CONSEGUENTE VOLTURA CATASTALE IN FAVORE DEL COMUNE DI LAINATE DEL DECRETO DI ESPROPRIAZIONE PER PUBBLICA UTILITA’ N. 16 DEL 07.09.2026 – REALIZZAZIONE DI OPERA PUBBLICA PARCO DELLE FRAZIONI – LOTTO 6 - CIG BDADEAB9F2",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Baranzate",
+   "oggetto": "PIANO DELLE VALORIZZAZIONI E DELLE ALIENAZIONI IMMOBILIARI 2027 - 2029",
+   "categoria": "DELIBERA GIUNTA",
+   "sottocategoria": "DELIBERA",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "San Giuliano Milanese",
+   "oggetto": "DET. REVISIONE 1^ SAL - CONTRATTO ATTUATIVO N. 1 PER MANUTENZIONE ORDINARIA STRADE, MANUTENZIONE ORDINARIA SEGNALETICA, RIMOZIONE GHIACCIO E NEVE TERRITORIO URBANO INSERITA NELL’ACCORDO QUADRO CON UNICO OPERATORE ECONOMICO AI SENSI DELL'ART. 59 DEL D. LGS. 36/2023, PER L’AFFIDAMENTO DELLA MANUTENZIONE STRAORDINARIA STRADE, MANUTENZIONE ORDINARIA STRADE, MANUTENZIONE ORDINARIA SEGNALETICA E RIMOZIONE GHIACCIO E NEVE TERRITORIO URBANO – CUP E87H24001040004 – CIG B63A4AEF4E – AVR SPA IN RTI RONZONI SRL - CIG DERIVATO BA2C9EB955",
+   "categoria": "ATTI",
+   "sottocategoria": "DETERMINAZIONI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Parabiago",
+   "oggetto": "RILASCIO PERMESSO DI COSTRUIRE IDENTIFICATO COL N. 282-SUE/2026 - VIA THOMAS EDISON N. 11.",
+   "categoria": "Permesso di costruire",
+   "sottocategoria": "Settore Tecnico",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "San Colombano al Lambro",
+   "oggetto": "ISTITUZIONE TEMPORANEA DEL DIVIETO DI SOSTA CON RIMOZIONE FORZATA NEL PARCHEGGIO PUBBLICO DI VIA FILIPPO CORRIDONI PER LAVORI DI INSTALLAZIONE DI N. 1 COLONNINA DI RICARICA PER VEICOLI ELETTRICI – DITTA [impresa]",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "ORDINANZA RESPONSABILE DI SERVIZIO",
+   "tipo_al_momento_della_raccolta": "cantiere_privato",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "cantiere_privato"
+  },
+  {
+   "comune": "Cusano Milanino",
+   "oggetto": "ORDINANZA IN MATERIA DI CIRCOLAZIONE STRADALE AVENTE AD OGGETTO: PROVVEDIMENTI VIABILISTICI IN VIA ALEMANNI/MATTEOTTI FINALIZZATI AL FINE DI POTER EFFETTUARE LAVORI DI COLLEGAMENTO FIBRA OTTICA",
+   "categoria": "Ordinanza Dirigenziale",
+   "sottocategoria": "Settore Polizia Locale e Protezione Civile",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Settimo Milanese",
+   "oggetto": "PROT U360/26 - AVVISO DI SELEZIONE PUBBLICA PER LA RICERCA DI N. 1 COORDINATORE TECNICO CON FUNZIONE DI DIREZIONE LAVORI (PROT. A/2026/36550/17-11-2026)",
+   "categoria": "ATTI VARI",
+   "sottocategoria": "NED RETI DISTRIBUZIONE GAS SRL",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": null
+  },
+  {
+   "comune": "Lainate",
+   "oggetto": "IMPEGNO DI SPESA PER LA SOSTITUZIONE DELL’APPARATO RADIO CHE COLLEGA LA TORRE DELL’ACQUEDOTTO CON IL CENTRO CIVICO DI BARBAIANA (CIG BDC1FA06A7).",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Novate Milanese",
+   "oggetto": "INTEGRAZIONE INCARICO PROFESSIONALE PER IL COORDINAMENTO DELLA SICUREZZA LAVORI PALAZZO MUNICIPALE.",
+   "categoria": "DETERMINA DIRIGENZIALE",
+   "sottocategoria": "SETTORE LAVORI PUBBLICI - MANUTENZIONI - GESTIONE VERDE PUBBLICO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Sesto San Giovanni",
+   "oggetto": "APPALTO INTEGRATO PER LA PROGETTAZIONE ESECUTIVA ED ESECUZIONE DEGLI INTERVENTI DI RIQUALIFICAZIONE VIABILITA’ COMUNALE - PARCHEGGI VIALE CASIRAGHI (TRATTO ROVANI CORRIDONI) – ROTATORIA EDISON/MARZABOTTO – NUOVO PARCHEGGIO VIA MADONNA DEL BOSCO - RETTIFICA - PROROGA DEL TERMINE DI PRESENTAZIONE DELLE OFFERTE",
+   "categoria": "BANDI DI GARA",
+   "sottocategoria": "SERVIZIO INFRASTRUTTURE E RETI - MANUTENZIONE STRADE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Abbiategrasso",
+   "oggetto": "DETERMINA A CONTRARRE PER L’AFFIDAMENTO DIRETTO AI SENSI DELL’ART.50, COMMA 1, LETT. B) DEL D. LGS. N. 36/2023 E S.M.I. PER SERVIZI DI ARCHITETTURA E INGEGNERIA RELATIVI ALLA PROGETTAZIONE ESECUTIVA, AL COORDINAMENTO DELLA SICUREZZA IN FASE DI PROGETTAZIONE ED IN FASE DI ESECUZIONE PREVISTO DAL DECRETO LEGISLATIVO 9 APRILE 2008, N. 81, ALLA DIREZIONE DEI LAVORI IN FASE DI ESECUZIONE, ALLE VERIFICHE E COLLAUDI STRUTTURALI E ALLA DIREZIONE DEI LAVORI IN FASE DI MANUTENZIONE PER INTERVENTI DI RIQUALIFICAZIONE DELLE AREE DEL CUNEO VERDE DELL’ANNUNCIATA, SITE NEL COMUNE DI ABBIATEGRASSO - CUP C42H25001200004 – CIG BD2FB3DD80",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cassano d'Adda",
+   "oggetto": "REALIZZAZIONE E RIPRISTINO DI SEGNALETICA ORIZZONTALE E VERTICALE – CIG BCE2228127 – APPROVAZIONE CONTABILITA’ RELATIVA ALLO STATO AVANZAMENTO LAVORI N. 2 E RELATIVO CERTIFICATO DI PAGAMENTO.",
+   "categoria": "ATTI",
+   "sottocategoria": "ALTRE DETERMINE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "San Donato Milanese",
+   "oggetto": "PIANO TRIENNALE DELLE OPERE PUBBLICHE 2027/2029 HTTPS://SERVIZI.COMUNE.SANDONATOMILANESE.MI.IT/PORTAL/SEGNALAZIONE-DISSERVIZIO/#/REPORT",
+   "categoria": "AVVISO PUBBLICO",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Melegnano",
+   "oggetto": "ORDINANZA PER LA MESSA IN SICUREZZA DEGLI IMMOBILI SITI IN VIA SAN MARTINO CIVICI 6, 8, 10, 12, 14 E PER IL RISCHIO IGIENICO-SANITARIO DOVUTO ALLA PROLIFERAZIONE DI PICCIONI E UCCELLI SELVATICI",
+   "categoria": "",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Rho",
+   "oggetto": "PROT U360/26 - AVVISO DI SELEZIONE PUBBLICA PER LA RICERCA DI N. 1 COORDINATORE TECNICO CON FUNZIONE DI DIREZIONE LAVORI (PROT. A/2026/75651/17-11-2026)",
+   "categoria": "Avviso",
+   "sottocategoria": "COMUNE DI RHO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": null
+  },
+  {
+   "comune": "Vernate",
+   "oggetto": "LAVORI DI AMPLIAMENTO E MANUTENZIONE STRAORDINARIA DEL CIVICO CIMITERO DI MONCUCCO - CIG: B85196EA44, CUP: H42F25000080004 - APPROVAZIONE PERIZIA DI VARIANTE E CONTESTUALE IMPEGNO DI SPESA",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cassano d'Adda",
+   "oggetto": "SERVIZIO DI MANUTENZIONE STRAORDINARIA DELLE POMPE DI IRRIGAZIONE DELLO STADIO VALENTINO MAZZOLA E DEL GUARNAZZOLA - CIG BD6DDFF3F1. AGGIUDICAZIONE.",
+   "categoria": "ATTI",
+   "sottocategoria": "DETERMINE DI IMPEGNO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Legnano",
+   "oggetto": "VIALE GORIZIA ANGOLO VIA STELVIO (CIVICO 13) - CONDOMINIO \"GORIZIA\" - IMPRESA [impresa] ORDINANZA DI DIVIETO DOI SOSTA CON RIMOZIONE FORZATA DEI VEICOLI E DIVIETO DI TRANSITO SUI MARCIAPIEDI INTERESSATI AI LAVORI. (ORDINANZA/2026/760/11-11-2026)",
+   "categoria": "Ordinanze",
+   "sottocategoria": "COMUNE DI LEGNANO",
+   "tipo_al_momento_della_raccolta": "cantiere_privato",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "cantiere_privato"
+  },
+  {
+   "comune": "Opera",
+   "oggetto": "INDIVIDUAZIONE DEI COMPONENTI DEL GRUPPO AMMINISTRAZIONE PUBBLICA COMUNE DI OPERA E DEFINIZIONE DEL PERIMETRO DI CONSOLIDAMENTO DEL BILANCIO CONSOLIDATO - ESERCIZIO 2026",
+   "categoria": "DELIBERA",
+   "sottocategoria": "COMUNE DI OPERA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Lacchiarella",
+   "oggetto": "INTERVENTO DI RISANAMENTO CONSERVATIVO DEI BLOCCHI BAGNI DELLA SCUOLA SECONDARIA CON ADEGUAMENTO IMPIANTISTICO E NORMATIVO – LOTTO II – IMPIANTI ELETTRICI – CUP H98H26000210004 – CIG BC678920A9 – INTEGRAZIONE DELL’IMPEGNO DI SPESA CONSEGUENTE ALLA MODIFICA CONTRATTUALE APPROVATA AI SENSI DELL’ART. 120, COMMA 3, DEL D.LGS. 36/2023 – APPROVAZIONE DELLA CONTABILITÀ FINALE – PRESA D’ATTO DEL CERTIFICATO DI REGOLARE ESECUZIONE.",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Settimo Milanese",
+   "oggetto": "LAVORI DI MANUTENZIONE STRAORDINARIA ALLOGGI COMUNALI. CUP D62D26000290004 – CIG BDB314DAC7. PRESA ATTO OFFERTA PRESENTATA IN SINTEL E AGGIUDICAZIONE ALLA DITTA INTRAPRESA ENGINEERING S.R.L. ADEMPIMENTI CONSEGUENTI. (DETERMINA/2026/719/25-11-2026)",
+   "categoria": "DETERMINAZIONI",
+   "sottocategoria": "COMUNE DI SETTIMO MILANESE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Novate Milanese",
+   "oggetto": "ACCERTAMENTO ENTRATE DERIVANTI DA ESCUSSIONE FIDEJUSSIONE RELATIVO AI \"LAVORI DI REALIZZAZIONE NUOVA PALESTRA POLIFUNZIONALE SCUOLA \"G.RODARI\" DI VIA PRAMPOLINI N 10\" CIG 90432928A2 - CUP I61B21002800001, CONTRATTO REP. 8208 RACCOLTA N. 203",
+   "categoria": "DETERMINA DIRIGENZIALE",
+   "sottocategoria": "SERVIZIO LAVORI PUBBLICI E MANUTENZIONI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cologno Monzese",
+   "oggetto": "LAVORI DI MANUTENZIONE STRAORDINARIA AREA MUSICALE PIANO PRIMO SCUOLA MEDIA “DANTE ALIGHIERI” VIA BOCCACCIO 13 - APPROVAZIONE STATO AVANZAMENTO LAVORI N.2 A TUTTO IL 11/11/2026 - CUP D22B26001080004 CIG BC318759E8",
+   "categoria": "",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cambiago",
+   "oggetto": "CIG B286876690 - CUP I18J22000020004 - LAVORI DI RISTRUTTURAZIONE EX PALAZZINA ALLOGGI ERP IN FRAZIONE TORRAZZA DI CAMBIAGO – PRESA D’ATTO COMUNICAZIONE DI SUBAFFIDAMENTO ALLA DITTA DP PARQUET.",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cernusco sul Naviglio",
+   "oggetto": "REGOLAMENTAZIONE TEMPORANEA DELLA CIRCOLAZIONE STRADALE IN VIA BASSANO, VIA CADORE, VIA TONALE E VIA AQUILEIA PER L'ESECUZIONE DI LAVORI DI FRESATURA E ASFALTATURA DELLA PAVIMENTAZIONE STRADALE – DAL 23 AL 30 NOVEMBRE 2026 (ORDINANZA/2026/312/20-11-2026)",
+   "categoria": "ORDINANZE",
+   "sottocategoria": "COMUNE DI CERNUSCO SUL NAVIGLIO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Rho",
+   "oggetto": "APPROVAZIONE E LIQUIDAZIONE SPESA ANNO 2027 PER LICENZE FISCALI PER L'ESERCIZIO DI OFFICINA ELETTRICA DI PRODUZIONE COSTITUITA DA PANNELLI FOTOVOLTAICI PRESSO LA PISCINA DEL CENTRO SPORTIVO DEL MOLINELLO DI VIA TRECATE - AGENZIA DELLE DOGANE (DETERMINA/2026/1328/23-11-2026)",
+   "categoria": "Determinazioni del Resposabile",
+   "sottocategoria": "COMUNE DI RHO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Pioltello",
+   "oggetto": "OPERE DI URBANIZZAZIONE SECONDARIA. LAVORI DI RISTRUTTURAZIONE E AMPLIAMENTO DELLA SCUOLA PRIMARIA DI VIA GALILEI – CUP E62C22000010006. APPROVAZIONE DEL PROGETTO ESECUTIVO AI SENSI DEGLI ARTT. 41 E 42 DEL D.LGS. 36/2023 E DELL’ART. 48 DEL D.LGS. 267/2000.",
+   "categoria": "REGISTRO DELLE DELIBERAZIONI",
+   "sottocategoria": "DELIBERAZIONI DI GIUNTA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Novate Milanese",
+   "oggetto": "LAVORI DI RIQUALIFICAZIONE DELL'AREA VERDE DI VIA PIAVE/ARIOSTO E OPERE DI URBANIZZAZIONE VIA BARANZATE 89 (EX VIA CACADENARI) - CUP I67H25000470004 - APPROVAZIONE PERIZIA DI VARIANTE.",
+   "categoria": "DETERMINA DIRIGENZIALE",
+   "sottocategoria": "SERVIZIO LAVORI PUBBLICI E MANUTENZIONI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Rescaldina",
+   "oggetto": "MANUTENZIONE STRAORDINARIA PORTALE AREA PEDONALE - SOSTITUZIONE TELECAMERA DI CONTESTO PER GUASTO - CIG. N. BDEA0CE4EB",
+   "categoria": "BANDI DI GARA E CONTRATTI",
+   "sottocategoria": "DETERMINAZIONE A CONTRARRE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cambiago",
+   "oggetto": "CIG BAEC9D710E - CUP I19J22001450005 - LAVORI STRADALI DI MANUTENZIONE STRAORDINARIA INTERESSANTI TRATTO DI VIA OBERDAN COMPRESA TRA L'INTERSEZIONE CON VIA DELLA ROCCA E VIA INDIPENDENZA – APPROVAZIONE STATO FINALE E CRE",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Arluno",
+   "oggetto": "ORDINANZA PER PROVVEDIMENTI TEMPORANEI IN ORDINE ALLA CIRCOLAZIONE STRADALE PER LAVORI EDILI IN VIA MONTI SNC DALLE ORE 10:00 ALLE ORE 14:00 DEL 20/11/2026",
+   "categoria": "Ordinanze",
+   "sottocategoria": "Area Polizia Locale",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Abbiategrasso",
+   "oggetto": "REALIZZAZIONE DI ZEBRATURE AL FINE DI INIBIRE LA SOSTA AI VEICOLI IN VIA DEL CARSO IN PROSSIMITA’ DEI CIVICI 1 E 3 - REITERAZIONE ORDINANZA N. 94/2026 E ASSEGNAZIONE DI NUOVO TERMINE PER L’ESECUZIONE DEI LAVORI.",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "ORDINANZE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Garbagnate Milanese",
+   "oggetto": "CIG (PADRE): BCE8032BA2 - ACCORDO QUADRO PER IL SERVIZIO DI MANUTENZIONE E VERIFICHE PERIODICHE E MANUTENZIONE STRAORDINARIA DELLE APPARECCHIATURE E DEI DISPOSITIVI ANTINCENDIO DELLE STRUTTURE PUBBLICHE (SEMESTRALE) - AFFIDAMENTO CONTRATTO ATTUATIVO N. 1 - RELATIVO ALLE VERIFICHE PERIODICHE DELLE APPARECCHIATURE E DEI DISPOSITIVI ANTINCENDIO - DURATA 6 MESI – CIG DERIVATO: BDDC2CD0D9",
+   "categoria": "ATTI",
+   "sottocategoria": "DETERMINAZIONI DIRIGENZIALI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Gaggiano",
+   "oggetto": "ACCORDO QUADRO PER SERVIZI TECNICI DI INGEGNERIA E ARCHITETTURA EX ART. 66 DEL CODICE DEI CONTRATTI E DI SUPPORTO AL RUP EX ART. 15 DEL CODICE DEI CONTRATTI - ACCORDO SPECIFICO RELATIVO AL SERVIZIO TECNICO DI REDAZIONE PFTE PER AFFIDAMENTO DI ACCORDO QUADRO FINALIZZATO ALL'ESECUZIONE DI INTERVENTI DI MANUTENZIONE COPERTURE IMMOBILI COMUNALI - CUP I62F26000460004 - CIG PADRE BB6C50AAFC - CIG DERIVATO BD906BF8BB - IMPEGNO DI SPESA",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Binasco",
+   "oggetto": "AFFIDAMENTO DIRETTO, MEDIANTE LA PIATTAFORMA SINTEL DI ARIA S.P.A., DEGLI INTERVENTI DI MANUTENZIONE STRAORDINARIA DEL PATRIMONIO ARBOREO COMUNALE – PROGETTO APPROVATO CON DELIBERAZIONE G.C. 111 DEL 04/11/2026 – ALL’IMPRESA DENDROTEC DI MONZA (MB) – CUP: G88E25000270004 – CIG: BDC9486E5C.",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Sedriano",
+   "oggetto": "NEXTGENERATIONEU - LAVORI DI RESTAURO E RIQUALIFICAZIONE DI VILLA ALLAVENA, FINANZIATI DALL'UNIONE EUROPEA - MISSIONE M5C2I2.2 - PNRR- PROGETTO COME IN DI CITTA' METROPOLITANA DI MILANO.MEF/ME.PA. DETERMINAZIONE A CONTRARRE IN AFFIDAMENTO DIRETTO PER ACQUISTO N.1 SWITCH 8 PORTE HP MODELLO HPE ARUBA NETWORKING CX 6000 8P 10M/100M/1G 2P SFP 1G SWITCH. A FAVORE DELLA DITTA DPS INFORMATICA S.N.C. DI PRESELLO GIANNI & C. CIG BD9C0BE5E0. CUP G88122000150001.",
+   "categoria": "DETERMINAZIONE",
+   "sottocategoria": "Area I - Risorse",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Pioltello",
+   "oggetto": "AVVISO DI RETTIFICA MODALITÀ DI CONSULTAZIONE ON-LINE DELLA DOCUMENTAZIONE (AGGIORNAMENTO DEL LINK) - VALUTAZIONE AMBIENTALE STRATEGICA (VAS) DELLA VARIANTE GENERALE AL PGT",
+   "categoria": "AVVISI",
+   "sottocategoria": "AVVISO PUBBLICO",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "Rho",
+   "oggetto": "INTERVENTI DI MIGLIORAMENTO SISMICO, RIQUALIFICAZIONE ENERGETICA E ADEGUAMENTO ANTINCENDIO PER LA RICONVERSIONE DI UN CAPANNONE INDUSTRIALE A SEDE DEL NUOVO ARCHIVIO DEL COMUNE DI RHO - LOTTO B - CUP C42H24000310004 CIG B2080EA456 - PRESA D'ATTO DELL'AMMISSIBILITA' DELLA RELAZIONE SUL CONTO FINALE E DEL CRE AI SENSI DELL'ART. 116, COMMA 2 DEL D.LGS. 36/2023 E SMI (DETERMINA/2026/1354/25-11-2026)",
+   "categoria": "Determinazioni del Resposabile",
+   "sottocategoria": "COMUNE DI RHO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Rosate",
+   "oggetto": "APPROVAZIONE 3° S.A.L. CORRISPONDENTE AL FINALE PER LAVORI ESEGUITI A TUTTO IL 22/10/2026 ED IL RELATIVO CERTIFICATO DI PAGAMENTO DI IMPORTO PARI AD €.5.169,50 OLTRE IVA 10%, PER I LAVORI DI «MANUTENZIONE STRAORDINARIA STRADE COMUNALI E ABBATTIMENTO BARRIERE ARCHITETTONICHE 2026» - CIG: BBF2CABF8C.",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cassano d'Adda",
+   "oggetto": "VARIAZIONE ESIGIBILITA’, AI SENSI DELL’ART. 175, COMMA 5 QUATER DEL D.LGS. 267/2000 E S.M.I., AL BILANCIO DI PREVISIONE 2026/2028 - SETTORE 7. LAVORI PUBBLICI.",
+   "categoria": "ATTI",
+   "sottocategoria": "DETERMINE DI IMPEGNO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Dresano",
+   "oggetto": "CIG BDB54E496A – LAVORI DI SPOSTAMENTO TELO E VIDEOPROIETTORE INSTALLATO PRESSO L’AUDITORIUM “SANDRO PERTINI” – AGGIUDICATARIO OPERATORE ECONOMICO TECNOFFICE S.R.L. CON SEDE LEGALE A SAN GIULIANO MILANESE (MI) - P.I./C.F. 04462980154 - INTEGRAZIONE IMPEGNO",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Melegnano",
+   "oggetto": "NOMINA PROFESSIONISTA PER REDAZIONE PERIZIA DI STIMA SUL VALORE DELLE MONETIZZAZIONE DELLE AREE A STANDARD, INTERVENTO REALIZZAZIONE NUOVO DATA CENTER AT24 COMPARTO C - NTT",
+   "categoria": "DETERMINE",
+   "sottocategoria": "DETERMINAZIONI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Parabiago",
+   "oggetto": "MODIFICHE TEMPORANEE ALLA VIABILITA' PER LAVORI POTENZIAMENTO DELLA LINEA FERROVIARIA - VIA STATUTO",
+   "categoria": "Ordinanze",
+   "sottocategoria": "Servizi Polizia Locale",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cassina De' Pecchi",
+   "oggetto": "DIVIETO DI SOSTA CON RIMOZIONE FORZATA E SENSO UNICO ALTERNATO PER LAVORI DI FRESATURA DELLA PAVIMENTAZIONE E SUCCESSIVO RIFACIMENTO DEL TAPPETO D'USURA DAL GIORNO 23/11/2026 AL GIORNO 04/12/2026 IN VIA LEONARDO DA VINCI",
+   "categoria": "ORDINANZE",
+   "sottocategoria": "ORDINANZA",
+   "tipo_al_momento_della_raccolta": "cantiere_privato",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "cantiere_privato"
+  },
+  {
+   "comune": "Opera",
+   "oggetto": "CONCORSO PUBBLICO, PER ESAMI, PER LA COPERTURA DI COMPLESSIVI N. 1 POSTO, A TEMPO PIENO E INDETERMINATO, DI FUNZIONARIO/A TECNICO/A ESPERTO IN LAVORI PUBBLICI - AREA DEI FUNZIONARI ED ELEVATA QUALIFICAZIONE, PRESSO IL COMUNE DI OPERA - NOMINA COMMISSIONE - IMPEGNO DI SPESA E ATTI CONSEGUENTI",
+   "categoria": "DETERMINAZIONE",
+   "sottocategoria": "COMUNE DI OPERA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Parabiago",
+   "oggetto": "AVVISO DI RILASCIO PERMESSO DI COSTRUIRE 447-SUE/2026 - VIA E. BARSANTI, 18",
+   "categoria": "Permesso di costruire",
+   "sottocategoria": "Settore Tecnico",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "Gorgonzola",
+   "oggetto": "MANUTENZIONE STRAORDINARIA IMPIANTI TERMICI DEGLI IMMOBILI COMUNALI - APPROVAZIONE PROGETTO DI FATTIBILITA’ TECNICO ECONOMICA, DETERMINAZIONE A CONTRARRE, AFFIDAMENTO DIRETTO E AGGIUDICAZIONE – SOCIETA’ TREVICALOR S.A.S. DI CRODA CRISTINA & C. (CIG BDC9FFE53C) #",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Rho",
+   "oggetto": "LAVORI DI REALIZZAZIONE NUOVA ROTATORIA C.SO EUROPA – SS527 BUSTESE PER IL COMUNE DI SOLARO (MI) - CIG BC07DE1607 AVVISO GARA ESPERITA SUCCESSIVA A ESECUZIONE DELLA SENTENZA DEL TAR LOMBARDIA – MILANO SEZ. I – N. 4635/2026 (PROT. I/2026/74663/11-11-2026)",
+   "categoria": "Avviso di gara esperita",
+   "sottocategoria": "COMUNE DI RHO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cernusco sul Naviglio",
+   "oggetto": "PROGRAMMA TRIENNALE 2027/2029 DEI LAVORI PUBBLICI, ELENCO ANNUALE 2027 E DEGLI ACQUISTI DI BENI E SERVIZI DI COMPETENZA DEL COMUNE DI CERNUSCO SUL NAVIGLIO (MI) - ADOZIONE DEGLI SCHEMI ART. 37 CO.6 DEL D.LGS. 36/2023 – IMMEDIATAMENTE ESEGUIBILE (GIUNTA/2026/224/11-11-2026)",
+   "categoria": "Delibere di Giunta",
+   "sottocategoria": "COMUNE DI CERNUSCO SUL NAVIGLIO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cesano Boscone",
+   "oggetto": "LAVORI DI ADEGUAMENTO E POTENZIAMENTO DEL CENTRO SPORTIVO COMUNALE \"BRUNO CEREDA\" DI CESANO BOSCONE (MI): RIPAVIMENTAZIONE E RISTRUTTURAZIONE DELLA PISTA DI ATLETICA LEGGERA A SEI CORSIE” - AFFIDAMENTO ALLA FIDAL DEL SERVIZIO DI COLLAUDO SPORTIVO FINALIZZATO ALL'OMOLOGAZIONE DELL'IMPIANTO - IMPEGNO DI SPESA E LIQUIDAZIONE. CIG BDB22CC2B9 – CUP B46J20000670005",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONI DEL DIRIGENTE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Lainate",
+   "oggetto": "MODIFICA DEL PROGRAMMA TRIENNALE DEI LAVORI PUBBLICI 2026 – 2028 E DELL’ELENCO ANNUALE 2026 – AGGIORNAMENTO OTTOBRE 2026.",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DELIBERA DI CONSIGLIO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cernusco sul Naviglio",
+   "oggetto": "REGOLAMENTAZIONE TEMPORANEA DELLA CIRCOLAZIONE STRADALE IN VIA FORNACE, MEDIANTE CHIUSURA AL TRANSITO VEICOLARE E DEVIAZIONE DEL TRAFFICO, PER LAVORI DI SCAVO FINALIZZATI AL RIFACIMENTO DELLA RETE IDRICA – DAL 26 NOVEMBRE AL 18 DICEMBRE 2026 (ORDINANZA/2026/318/25-11-2026)",
+   "categoria": "ORDINANZE",
+   "sottocategoria": "COMUNE DI CERNUSCO SUL NAVIGLIO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Abbiategrasso",
+   "oggetto": "MANUTENZIONE ORDINARIA E STRAORDINARIA DEL PATRIMONIO STRADALE, PEDONALE E CICLABILE, COMPRENSIVO DI MONITORAGGIO, PRONTO INTERVENTO, REPERIBILITÀ, SGOMBERO NEVE ED ANTIGELATE – DURATA 48 MESI, MEDIANTE LO STRUMENTO DELL’ACCORDO QUADRO – CUI L01310880156202400006 - CIG ACCORDO QUADRO B226317BC3 – CONTRATTO ATTUATIVO N. 1 - CIG DERIVATO B3285D579E – APPROVAZIONE STATO DI AVANZAMENTO LAVORI N. 4 E RELATIVO CERTIFICATO DI PAGAMENTO IN ACCONTO",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Bollate",
+   "oggetto": "SERVIZI DI PROGETTAZIONE DI FATTIBILITA’ TECNICO-ECONOMICA, PROGETTAZIONE ESECUTIVA E DIREZIONE DEI LAVORI PER LA RIQUALIFICAZIONE DEL CENTRO SPORTIVO COMUNALE DI VIA DANTE, MEDIANTE REALIZZAZIONE DI UNA STRUTTURA POLIFUNZIONALE E SERVIZI ACCESSORI. DETERMINA A CONTRARRE PER L’AFFIDAMENTO DIRETTO TRAMITE PAD “ACQUISTI TELEMATICI” AL R.T.P. COSTITUENDO COMPOSTO DA [professionista] BOLLATE (MI) – [professionista] MELZO (MI) E STUDIO TECNICO “E2N TECNO PLANT” DI NICOLAS RIDOLFI DI GARBAGNATE MILANESE (MI) – CUP C24J26000160004 - CIG BDBE7A86D0.",
+   "categoria": "",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Pero",
+   "oggetto": "MESSA IN SICUREZZA “CASCINA PIOLTINA” SITA A PERO (MI) IN VIA GALILEO GALILEI 7 CONTRADDISTINTA CATASTALMENTE AL FOGLIO 9 MAPPALE 61",
+   "categoria": "",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Senago",
+   "oggetto": "VIA VERONA E VIA PARIGI - ISTITUZIONE TEMPORANEA DEL SENSO UNICO ALTERNATO DI CIRCOLAZIONE (VIA VERONA) E DEL DIVIETO DI SOSTA AMBO I LATI CON RIMOZIONE FORZATA (VIA VERONA E VIA PARIGI) PER LAVORI",
+   "categoria": "ATTI",
+   "sottocategoria": "ORDINANZA",
+   "tipo_al_momento_della_raccolta": "cantiere_privato",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "cantiere_privato"
+  },
+  {
+   "comune": "Cornaredo",
+   "oggetto": "INTERVENTO DI RIPRISTINO DEL GUASTO ALL'IMPIANTO DI RISCALDAMENTO PRESSO SCUOLA PRIMARIA DI VIA STURZO - OPERE EDILI - AFFIDAMENTO ALLA DITTA M.G. COSTRUZIONI EDILI SRL – CIG BDB087CBFD (DETERMINA/2026/757/09-11-2026)",
+   "categoria": "Elenco determinazioni",
+   "sottocategoria": "COMUNE DI CORNAREDO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cuggiono",
+   "oggetto": "ISTITUZIONE TEMPORANEA DEL DIVIETO DI SOSTA CON RIMOZIONE FORZATA IN VIA BADI 10 PER L'ESECUZIONE DI LAVORI DI POTATURA PIANTE.",
+   "categoria": "Ordinanza",
+   "sottocategoria": "AREA POLIZIA LOCALE",
+   "tipo_al_momento_della_raccolta": "cantiere_privato",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "cantiere_privato"
+  },
+  {
+   "comune": "San Donato Milanese",
+   "oggetto": "PROGRAMMA TRIENNALE OPERE PUBBLICHE 2027/2029 ED ELENCO ANNUALE 2027. DECRETO LEGISLATIVO N. 36 DEL 31/03/2023. ADOZIONE SCHEMA",
+   "categoria": "REGISTRO DELLE DELIBERE",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Sesto San Giovanni",
+   "oggetto": "MANUTENZIONE STRAORDINARIA DI PAVIMENTAZIONE E D'INSTALLAZIONE DI PANCHINE IN AREA VIA MONTE SABOTINO - VIA VILLORESI - APPROVAZIONE PREVENTIVO EXTRACANONE SL4 PER AMPLIAMENTO IP - IMPEGNO DI SPESA",
+   "categoria": "DETERMINAZIONI",
+   "sottocategoria": "UFFICIO AMMINISTRATIVI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cusano Milanino",
+   "oggetto": "ORDINANZA IN MATERIA DI CIRCOLAZIONE STRADALE AVENTE AD OGGETTO: PROVVEDIMENTI VIABILISTICI IN VIA ALEMANNI/MATTEOTTI FINALIZZATI AL FINE DI POTER EFFETTUARE LAVORI DI COLLEGAMENTO FIBRA OTTICA",
+   "categoria": "Ordinanza Dirigenziale",
+   "sottocategoria": "Settore Polizia Locale e Protezione Civile",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cesano Boscone",
+   "oggetto": "ADOZIONE DEL PROGRAMMA TRIENNALE DEI LAVORI PUBBLICI 2027/2029 DELL'AMMINISTRAZIONE DEL COMUNE DI CESANO BOSCONE AI SENSI DELL'ART. 37 DEL D.LGS. 36/2023",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DELIBERE DI GIUNTA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Trezzano Sul Naviglio",
+   "oggetto": "LIQUIDAZIONE DELL'INCENTIVAZIONE DELLE FUNZIONI TECNICHE EX ART. 113 DEL D.LGS. N. 50/2016 AL RUP RELATIVAMENTE AI LAVORI DI MANUTENZIONE ORDINARIA, MESSA IN SICUREZZA DI STRADE, VIABILITA', MARCIAPIEDI E SERVIZIO DI PRONTO INTERVENTO 24H TRIENNIO 2023-2025 - CIG 94989204C2.",
+   "categoria": "REGISTRO DELLE DETERMINE",
+   "sottocategoria": "SERVIZIO LAVORI PUBBLICI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Rescaldina",
+   "oggetto": "ISTITUZIONE TEMPORANEA DI CHIUSURA DELLA STRADA E DIVIETO DI SOSTA CON RIMOZIONE FORZATA IN VIA MONTE GRAPPA NEL TRATTO COMPRESO TRA VIA SAN FRANCESCO E VIA CAV. DI V. VENETO PER LAVORI DI ALLACCIAMENTO FOGNARIO NEI GIORNI 14 E 15 DICEMBRE",
+   "categoria": "ATTI",
+   "sottocategoria": "ORDINANZA",
+   "tipo_al_momento_della_raccolta": "cantiere_privato",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "cantiere_privato"
+  },
+  {
+   "comune": "Cernusco sul Naviglio",
+   "oggetto": "REGOLAMENTAZIONE TEMPORANEA DELLA CIRCOLAZIONE STRADALE PER OCCUPAZIONE DI SUOLO PUBBLICO IN VIA ADUA N. 71 PER LAVORI EDILI – 18 NOVEMBRE 2026 (ORDINANZA/2026/304/13-11-2026)",
+   "categoria": "ORDINANZE",
+   "sottocategoria": "COMUNE DI CERNUSCO SUL NAVIGLIO",
+   "tipo_al_momento_della_raccolta": "cantiere_privato",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "cantiere_privato"
+  },
+  {
+   "comune": "Rho",
+   "oggetto": "DISCIPLINARE DI GARA PER L'AFFIDAMENTO OPERE DI URBANIZZAZIONE - PIANO PARTICOLAREGGIATO VIE CAVOUR - MATTEOTTI – IV NOVEMBRE - COMUNE DI POGLIANO MILANESE (MI) - CIG: BDF50EA968 (PROT. P/2026/77892/26-11-2026)",
+   "categoria": "Avviso",
+   "sottocategoria": "COMUNE DI RHO",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "Rozzano",
+   "oggetto": "LAVORI DI RIPRISTINO DELLA SISTEMAZIONE NATURALISTICA DELLA SPONDA DESTRA DELLA ROGGIA PIZZABRASA ADIACENTE IL CENTRO COMMERCIALE ESSELUNGA, CUP B28H25013810004 CIG BC4B0BE75E. AUTORIZZAZIONE SUBAPPALTO ALLA DITTA COSTRUZIONI CERRI SRL PER OPERE CAT. OG8 (INSTALLAZIONE CANTIERE, TAGLIO PIANTE E PULIZIA AREA DI CANTEIRE, SCAVI E MOVIMENTI TERRA, RIMOZIONI E DEMOLIZIONI VARIE, REALIZZAZIONE SCOGLIERE, REALIZZAZIONE PALIFICATE IN LEGNAME, OPERE A VERDE).",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Garbagnate Milanese",
+   "oggetto": "PUBBLICAZIONE PERMESSO DI COSTRUIRE N. 15/2026",
+   "categoria": "ATTI",
+   "sottocategoria": "AVVISI",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "Trezzo Sull'Adda",
+   "oggetto": "VIALE LOMBARDIA - LAVORI INCREMENTO/ALLACCIO FIBRA OTTICA - DISCIPLINA DELLA CIRCOLAZIONE",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "ORDINANZA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Trezzano Sul Naviglio",
+   "oggetto": "DIVIETO DI SOSTA CON RIMOZIONE FORZATA, PARZIALE RESTRINGIMENTO DELLE CARREGGIATE E DIVIETO DI CIRCOLAZIONE OVE NECESSARIO SU TUTTO IL TERRITORIO COMUNALE PER OPERE DI RIPRISTINO STRADE A SEGUITO DI LAVORI DI EFFICIENTAMENTO E RIQUALIFICA ENERGETICA DELL'IMPIANTO DI PUBBLICA ILLUMINAZIONE",
+   "categoria": "REGISTRO DELLE DETERMINE",
+   "sottocategoria": "AREA POLIZIA LOCALE, PROTEZIONE CIVILE E SPORTELLO UNICO ATTIVITA' PRODUTTIVE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Novate Milanese",
+   "oggetto": "PROCEDURA APERTA AI SENSI DELL'ARTICOLO 4, COMMA 11 D.LGS 38/2021 E SS.MM.II E AI SENSI DEGLI ARTT. 176, 182, 185 E 193 DEL D.LGS. N. 36/2023 PER L'AFFIDAMENTO IN CONCESSIONE CON LO STRUMENTO DELLA FINANZA DI PROGETTO DELLA RIQUALIFICAZIONE E GESTIONE DEL CENTRO SPORTIVO COMUNALE PISCINA POLI SITO NEL COMUNE DI NOVATE MILANESE - AGGIUDICAZIONE",
+   "categoria": "DETERMINA DIRIGENZIALE",
+   "sottocategoria": "AREA GESTIONE SVILUPPO DEL TERRITORIO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Arluno",
+   "oggetto": "ORDINANZA PER PROVVEDIMENTI TEMPORANEI IN ORDINE ALLA CIRCOLAZIONE STRADALE PER LAVORI EDILI IN VIA MARTIRI DELLA LIBERTA' N.11 DALLE ORE 07:00 ALLE ORE 24:00 DAL 14/11/2026 AL 27/11/2026",
+   "categoria": "Ordinanze",
+   "sottocategoria": "Area Polizia Locale",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Gaggiano",
+   "oggetto": "AFFIDAMENTO DIRETTO, AI SENSI DELL'ART. 50, COMMA 1, LETT. A) DEL D.LGS. 36/2023, PER L'ESECUZIONE DEI LAVORI DI MANUTENZIONE STRAORDINARIA DEGLI IMPIANTI ELETTRICI, ELETTRONICI, DI TELECOMUNICAZIONE E CITOFONICI DEL PATRIMONIO COMUNALE - ELETTRICA SARTORI SAS - CIG BDBCCCAAE7",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cuggiono",
+   "oggetto": "ADOZIONE PROGRAMMA TRIENNALE LAVORI PUBBLICI 2027–2029 ED ELENCO ANNUALE 2027",
+   "categoria": "Deliberazione della Giunta Comunale",
+   "sottocategoria": "AREA TECNICA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Rho",
+   "oggetto": "INTERVENTO DI RISTRUTTURAZIONE E RIQUALIFICAZIONE PER L'EFFICIENTAMENTO ENERGETICO DEL FABBRICATO ESISTENTE DI PROPRIETÀ COMUNALE DI VIA VINCENZO MONTI, 4 A RHO DESTINATO A SERVIZI ABITATIVI PUBBLICI - CUP C43E25000360006 - BANDO SEED PA SOSTENIBILITÀ ED EFFICIENZA ENERGETICA DEGLI EDIFICI PUBBLICI. LINEA B - D.G.R. N. XII/3741 DEL 30.12.2024 - AGGIUDICAZIONE IMPRESA SINOPOLI SRL - CIG BD32E033CD (DETERMINA/2026/1353/25-11-2026)",
+   "categoria": "Determinazioni del Resposabile",
+   "sottocategoria": "COMUNE DI RHO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cernusco sul Naviglio",
+   "oggetto": "REGOLAMENTAZIONE TEMPORANEA DELLA CIRCOLAZIONE STRADALE PER INTERVENTI DI RIQUALIFICAZIONE DEI MARCIAPIEDI IN VIA TONALE – DAL 30 NOVEMBRE AL 23 DICEMBRE 2026 (ORDINANZA/2026/321/25-11-2026)",
+   "categoria": "ORDINANZE",
+   "sottocategoria": "COMUNE DI CERNUSCO SUL NAVIGLIO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Binasco",
+   "oggetto": "AFFIDAMENTO DIRETTO, MEDIANTE LA PIATTAFORMA SINTEL DI ARIA S.P.A., DEL SERVIZIO DI SGOMBERO NEVE SU MARCIAPIEDI E PERCORSI PEDONALI STAGIONE INVERNALE 2026/2027 ALLA DITTA FAF SRL DI VERNATE (MI) – CIG: BDF172F565",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cisliano",
+   "oggetto": "ADOZIONE SCHEMA DI PROGRAMMA TRIENNALE DEI LAVORI PUBBLICI ANNI 2027-2029 ED ELENCO ANNUALE ANNO 2026 -ARTICOLO 37 E ALLEGATO I.5 D. LGS. 31 MARZO 2023, N.36 E SCHEMA PROGRAMMA TRIENNALE DEGLI ACQUISTI E SERVIZI 2027-2029",
+   "categoria": "Deliberazione della Giunta Comunale",
+   "sottocategoria": "Area Tecnica",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cernusco sul Naviglio",
+   "oggetto": "(CUP G92B23001720004 CIG B64BA13918) – LAVORI DI RIQUALIFICAZIONE DEL TETTO E DI PARTE DELLE FACCIATE SCUOLA PRIMARIA VIA MANZONI IN CERNUSCO SUL NAVIGLIO (MI)- - APPROVAZIONE DEL CERTIFICATO DI COLLAUDO (DETERMINE/2026/1407/24-11-2026)(UFFICIO URBANIZZAZIONI SECONDARIE - 143)",
+   "categoria": "DETERMINAZIONI",
+   "sottocategoria": "COMUNE DI CERNUSCO SUL NAVIGLIO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Inzago",
+   "oggetto": "Delibera: Giunta Comunale N.164 DEL 17/11/2026: ADOZIONE DEL PROGRAMMA TRIENNALE DEI LAVORI PUBBLICI 2027-2029 E ADOZIONE PROGRAMMA TRIENNALE DEGLI ACQUISTI DI BENI E SERVIZI 2027-2029.",
+   "categoria": "DELIBERE DI GIUNTA COMUNALE",
+   "sottocategoria": "SEGRETERIA ORGANI ISTITUZIONALI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cesano Boscone",
+   "oggetto": "PUBBLICAZIONE NELL'ALBO PRETORIO DEL PROVVEDIMENTO DI RILASCIO DEL PERMESSO DI COSTRUIRE N. 163/2024 AI SENSI DALL’ART. 20, COMMA 6, DEL DECRETO DEL PRESIDENTE DELLA REPUBBLICA 06.06.2001, N. 380",
+   "categoria": "BANDI E AVVISI",
+   "sottocategoria": "AVVISO PUBBLICO",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "Cologno Monzese",
+   "oggetto": "DETERMINA A CONTRARRE PER L'AFFIDAMENTO DIRETTO DEL SERVIZIO DI ACCERTAMENTO, ISPEZIONE E CONTROLLO DEGLI IMPIANTI TERMICI CIVILI PRESENTI SUL TERRITORIO COMUNALE RELATIVO ALLE STAGIONI TERMICHE 2026/2027 – 2027/2028 – CIG BD8B3C601D",
+   "categoria": "",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Vanzago",
+   "oggetto": "CHIUSURA PERCORSO CICLOPEDONALE DI VIA MILANO PER LAVORI RELATIVI ALLA COSTRUZIONE DEL NUOVO TRACCIATO DEL DERIVATORE VALLE OLONA",
+   "categoria": "ORDINANZE",
+   "sottocategoria": "COMUNE DI VANZAGO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Noviglio",
+   "oggetto": "DETERMINA N.269 DEL 18/11/2026 - AREA TECNICA: AFFIDAMENTO DIRETTO DEI LAVORI DI RIPARAZIONE DELL'IMPIANTO TERMICO A SERVIZIO DELLA SCUOLA PRIMARIA DI VIA VERDI N.4, MEDIANTE SOSTITUZIONE DELLA VALVOLA DEVIATRICE A TRE VIE COMPLETA DI SERVOCOMANDO - CIG BDDB855D3A.",
+   "categoria": "DETERMINAZIONI",
+   "sottocategoria": "ATTI UFFICIO SERVIZIO LAVORI PUBBLICI - MANUTENZIONI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cormano",
+   "oggetto": "RILASCIO PERMESSO DI COSTRUIRE - P.E. 17/2026",
+   "categoria": "",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "Rosate",
+   "oggetto": "LAVORI DI MANUTENZIONE IMPIANTO DI PESA PUBBLICA – RIPARAZIONE E SOSTITUZIONE ROUTER PER PAGAMENTI POS – SOCIETÀ BILANCIAI PORRO SRL - CIG BDC64D74D6",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Colturano",
+   "oggetto": "CUP J35E25000300004 - CIG BC3F6F8943 - LAVORI DI REALIZZAZIONE INTERVENTI IDRAULICI DI DRENAGGIO ACQUE METEORICHE, INVARIANZA IDROLOGICA-IDRAULICA, NUOVI PARCHEGGI E AREE ESTERNE DELL'ASILO 'NIDO DELLE CICOGNE' DEL COMUNE DI COLTURANO - AGGIUDICAZIONE ALLA SOCIETA' MONZANI UBALDO & FIGLI S.R.L. DI CORNATE D'ADDA (MB) P.IVA 05896370961 - APPROVAZIONE STATO AVANZAMENTO LAVORI N. 1",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cusano Milanino",
+   "oggetto": "OPERE DI ADEGUAMENTO ANTINCENDIO PER IL PALAZZETTO BASKET DEL CENTRO TENNIS DI VIA ROMA IN CUSANO MILANINO - CUP F18E26000040004 - CIG BC53FF34FC - PRESA D'ATTO DELL'AGGIORNAMENTO DEL PROGETTO DI CUI ALLA DELIBERA DI GIUNTA COMUNALE N. 51 DEL 17/6/2026.",
+   "categoria": "Determinazione",
+   "sottocategoria": "Settore Gestione del Territorio ed Ambiente",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Bareggio",
+   "oggetto": "RISTRUTTURAZIONE EDILIZIA DEL 'PALAZZO CASANOVA' - AMBITO DI RIGENERAZIONE URBANA - LINEE DI FINANZIAMENTO PNRR M5C212.1 (CUP H53D21000240001 – CIG B59C53639F) APPROVAZIONE STATO FINALE DEI LAVORI, RELAZIONE SUL CONTO FINALE E DEL COLLAUDO TECNICO-AMMINISTRATIVO",
+   "categoria": "DETERMINAZIONE",
+   "sottocategoria": "SETTORE LAVORI PUBBLICI E AMBIENTE",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "Bareggio",
+   "oggetto": "LAVORI DI DEMOLIZIONE, RIMOZIONE, SMALTIMENTO ED INSTALLAZIONE DELLE NUOVE SBARRE DI ACCESSO AL PARCO COMUNALE 4 ELLE - PRESA D'ATTO DELLA PROCEDURA AVVIATA AI SENSI DELL' ART. 50, COMMA 1, LETT. A) DEL D.LGS. N. 36/2023 - CIG BDC2CF24AD",
+   "categoria": "DETERMINAZIONE",
+   "sottocategoria": "SETTORE LAVORI PUBBLICI E AMBIENTE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Binasco",
+   "oggetto": "MUTUO CASSA DEPOSITI E PRESTITI S.P.A. POSIZIONE N. 6228538 – APPROVAZIONE DELLA DEVOLUZIONE (DIVERSO UTILIZZO) DELLE ECONOMIE DI SPESA PARI A € 107.440,01 E CONTESTUALE APPROVAZIONE DEL PROGETTO ESECUTIVO DEI LAVORI DI “RIQUALIFICAZIONE ENERGETICA ILLUMINAZIONE CAMPO DI CALCIO DEL CENTRO SPORTIVO COMUNALE” – CUP: G84J25000320006. DICHIARAZIONE IMMEDIATA ESEGUIBILITÀ.",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DELIBERA DI GIUNTA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cernusco sul Naviglio",
+   "oggetto": "CIG BDD583BF03: MANUTENZIONE STRAORDINARIA DI N. 2 DISSUASORI DI SOSTA ELETTRICI (PILOMAT) PRESSO IL CENTRO SPORTIVO DI VIA BUONARROTI A CERNUSCO SUL NAVIGLIO. AFFIDAMENTO ALLA DITTA PILOMAT SRL DI GRASSOBBIO (BG). (DETERMINE/2026/1430/24-11-2026)(UFFICIO URBANIZZAZIONI PRIMARIE E RETI TECNOLOGICHE - 58)",
+   "categoria": "DETERMINAZIONI",
+   "sottocategoria": "COMUNE DI CERNUSCO SUL NAVIGLIO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Novate Milanese",
+   "oggetto": "DETERMINA A CONTRATTARE E AFFIDAMENTO DIRETTO DEI LAVORI DI MANUTENZIONE STRAORDINARIA CON ADEGUAMENTO DELL'IMPIANTO ELETTRICO DI N° 14 ALLOGGI DI PROPRIETA' DEL COMUNE DI NOVATE MILANESE. - CIG BCD1A5AE51 CUP I62D26000090004 - IMPEGNO DI SPESA E COSTITUZIONE GRUPPO DI LAVORO",
+   "categoria": "DETERMINA DIRIGENZIALE",
+   "sottocategoria": "SERVIZIO LAVORI PUBBLICI E MANUTENZIONI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Ozzero",
+   "oggetto": "VERBALE ASTA PUBBLICA ALIENAZIONE DI IMMOBILE COMUNALE DI PROPRIETA' COMUNALE",
+   "categoria": "VERBALE",
+   "sottocategoria": "Servizio Tecnico",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "Cernusco sul Naviglio",
+   "oggetto": "CIG BD92CA818F: MANUTENZIONE STRAORDINARIA DISSUASORE DI SOSTA ELETTRICO (PILOMAT) VIA TORRIANI SUL TERRITORIO COMUNALE. AFFIDAMENTO ALLA DITTA PILOMAT SRL DI GRASSOBBIO (BG). (DETERMINE/2026/1362/10-11-2026)(UFFICIO URBANIZZAZIONI PRIMARIE E RETI TECNOLOGICHE - 57)",
+   "categoria": "DETERMINAZIONI",
+   "sottocategoria": "COMUNE DI CERNUSCO SUL NAVIGLIO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Abbiategrasso",
+   "oggetto": "BANDO ASTA PUBBLICA AREA PRESSO COMPARTO C1- PARZIALE ANNULLAMENTO VERBALI E OPERAZIONI DI GARA E RINNOVAZIONE LAVORI COMMISSIONE",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINE",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "Novate Milanese",
+   "oggetto": "LAVORI DI MANUTENZIONE STRAORDIANRIA PAVIMENTAZIONE MUNICIPIO AGGIUDICAZIONE LAVORI",
+   "categoria": "DETERMINA DIRIGENZIALE",
+   "sottocategoria": "SERVIZIO LAVORI PUBBLICI E MANUTENZIONI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cuggiono",
+   "oggetto": "APPROVAZIONE DEL PROGETTO DI FATTIBILITÀ TECNICO-ECONOMICA RELATIVO AGLI INTERVENTI DI COMPLETAMENTO IMPIANTO DI VENTILAZIONE MECCANICA CONTROLLATA COMPRESA LA FORNITURA E POSA UNITA' DI TRATTAMENTO ARIA PRESSO L'EDIFICIO SCOLASTICO SCUOLA PRIMARIA 'ANNA MARIA MOZZONI' -COD. EDIFICIO 0150960001- SEDE I.C. 'RITA LEVI MONTALCINI': AUTORIZZAZIONE ALLA PRESENTAZIONE CANDIDATURA AL BANDO REGIONALE 'SCUOLA SI-CURA' – D.G.R. N. XII/6490 DEL 13 LUGLIO 2026 E D.D.S. N. 11285 DEL 28 AGOSTO 2026.",
+   "categoria": "Deliberazione della Giunta Comunale",
+   "sottocategoria": "AREA TECNICA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Gorgonzola",
+   "oggetto": "ASTA PUBBLICA AI SENSI DEL CAPO III DEL VIGENTE REGOLAMENTO PER L’ALIENAZIONE, SECONDO IL METODO DI CUI ALL’ART. 73, LETT. C), DEL R.D. 23.05.1924, N. 827, PER L’ALIENAZIONE DI N. 2 IMMOBILI DI PROPRIETÀ DEL COMUNE DI GORGONZOLA (N. 1 IMMOBILE AD USO RESIDENZIALE E N. 1 BOX AD USO AUTORIMESSA)",
+   "categoria": "",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "Trezzano Sul Naviglio",
+   "oggetto": "ATTO DI INDIRIZZO PER LA PROROGA TECNICA DELLA CONCESSIONE RELATIVA ALLA GESTIONE DEL PARCO NERUDA NELLE MORE DELLA REALIZZAZIONE DEGLI INTERVENTI DI RIQUALIFICAZIONE DEL PARCO",
+   "categoria": "REGISTRO DELLE DELIBERE",
+   "sottocategoria": "AREA ISTRUZIONE, CULTURA E SPORT",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Lacchiarella",
+   "oggetto": "INTEGRAZIONE DETERMINAZIONE DIRIGENZIALE N. 107 DEL 24/06/2026 AVENTE AD OGGETTO: \"LAVORI DI MANUTENZIONE STRAORDINARIA PER OPERE MURARIE IN VARI PLESSI COMUNALI - (CIG. BBF0F66823)\"",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cambiago",
+   "oggetto": "CIG BDF884FFEE – AFFIDAMENTO INCARICO PROFEESSIONALE PER LA REDAZIONE DEL PROGETTO ESECUTIVO, DEL PIANO DI SICUREZZA E COORDINAMENTO IN FASE DI PROGETTAZIONE ED ESECUZIONE CON NOMINA DI CSP E CSE, DIREZIONE LAVORI, REDAZIONE CONTABILITA’ E CRE DEI LAVORI DI MANUTENZIONE STRAORDINARIA D’ADEGUAMENTO DELL’AREA MERCATO DI VIA IV NOVEMBRE IN CAMBIAGO – IMPEGNO DI SPESA",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Novate Milanese",
+   "oggetto": "INTEGRAZIONE INCARICO PER L'AFFIDAMENTO DEL SERVIZIO DI GESTIONE PRATICHE TECNICO/AMMINISTRATIVE RELATIVE ALL'IMPIANTO FOTOVOLTAICO SITUATO PRESSO L'ISTITUTO SCOLASTICO I. CALVINO - DETERMINA A CONTRARRE - IMPEGNO DI SPESA - CIG B4B54118B0",
+   "categoria": "DETERMINA DIRIGENZIALE",
+   "sottocategoria": "SERVIZIO LAVORI PUBBLICI E MANUTENZIONI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cologno Monzese",
+   "oggetto": "ISTITUZIONE DEL DIVIETO DI TRANSITO DEI VEICOLI SULL’ ALZAIA NAVIGLIO MARTESANA PER ESEGUIRE DEGLI SCAVI DA PARTE DELLA SOCIETA’ CO.GE.T. S.R.L.",
+   "categoria": "ORDINANZE",
+   "sottocategoria": "ORDINANZA",
+   "tipo_al_momento_della_raccolta": "cantiere_privato",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "cantiere_privato"
+  },
+  {
+   "comune": "Rosate",
+   "oggetto": "INTERVENTI DI MANUTENZIONI ORDINARIE E STRAORDINARIE IMPIANTI ELETTRICI EDIFICI DIVERSI - TECNO ELETTRICA S.N.C. – COD. CIG. BDD015AD29",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Novate Milanese",
+   "oggetto": "LAVORI DI RIQUALIFICAZIONE DELLA SEDE MUNICIPALE - AUTORIZZAZIONE AL SUBAPPALTO PER LAVORI DI TINTEGGIATURA",
+   "categoria": "DETERMINA DIRIGENZIALE",
+   "sottocategoria": "SERVIZIO LAVORI PUBBLICI E MANUTENZIONI",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cambiago",
+   "oggetto": "CIG BDBF99C78D - AFFIDAMENTO SERVIZIO DI MANUTENZIONE ORDINARIA IMPIANTO DI IRRIGAZIONE CAMPO DA CALCIO A UNDICI DEL CENTRO SPORTIVO COMUNALE DI VIA AI CAMPI ANNI SOLARE 2027/2028 - IMPEGNO DI SPESA",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Rozzano",
+   "oggetto": "AFFIDAMENTO DIRETTO CON CONTESTUALE ASSUNZIONE IMPEGNO DI SPESA A FAVORE DI ALFATEL SRL PER INTERVENTI DI MANUTENZIONE STRAORDINARIA IMPIANTI ELETTRICI PRESSO STRUTTURE COMUNALI, CIG BDBADF4892",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Sesto San Giovanni",
+   "oggetto": "ACCORDO QUADRO MANUTENZIONE STRAORDINARIA STRADE 2026/2027- AGGIUDICAZIONE CUP C47H24002090004 CIG: BC6C178905",
+   "categoria": "DETERMINAZIONI",
+   "sottocategoria": "SERVIZIO INFRASTRUTTURE E RETI - MANUTENZIONE STRADE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Castano Primo",
+   "oggetto": "INTERVENTI DI RIQUALIFICAZIONE ED EFFICIENTAMENTO DELL’AUDITORIUM “A. PACCAGNINI” – CUP H12H25000680001. APPROVAZIONE DOCUMENTO DI INDIRIZZO ALLA PROGETTAZIONE (D.I.P.)",
+   "categoria": "ATTI",
+   "sottocategoria": "DELIBERE DI GIUNTA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Opera",
+   "oggetto": "APPROVAZIONE DEL PROGETTO ESECUTIVO DELL'INTERVENTO DI \"MANUTENZIONE STRAORDINARIA RIFACIMENTO IMPERMEABILIZZAZIONE COPERTURA SCUOLA DON MILANI\"",
+   "categoria": "DELIBERA",
+   "sottocategoria": "COMUNE DI OPERA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cassano d'Adda",
+   "oggetto": "AVVISO DI AVVENUTA ADOZIONE DEL DELL’AMBITO DI TRASFORMAZIONE DENOMINATO “PA_VARIANTE AT EX SCALO FERROVIARIO” E DEPOSITO TELEMATICO PRESSO LA SEZIONE AMMINISTRAZIONE TRASPARENTE DEL SITO COMUNALE.",
+   "categoria": "ALTRI DOCUMENTI",
+   "sottocategoria": "AVVISI",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "Corbetta",
+   "oggetto": "ORDINANZA DIRIGENZIALE N.213 DEL 18/11/2026 - POLIZIA LOCALE: LAVORI IN VIA BADEN POWEL",
+   "categoria": "ORDINANZE DIRIGENZIALI",
+   "sottocategoria": "SETTORE SICUREZZA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "San Donato Milanese",
+   "oggetto": "GESTIONE DEL SERVIZIO DI MANUTENZIONE DEL VERDE DEL CENTRO SPORTIVO MATTEI DI VIA CAVIAGA - GESTIONE DEL SERVIZIO DI FACCHINAGGIO E PICCOLA MANUTENZIONE ORDINARIA - AFFIDAMENTO DIRETTO FUTURA SOCIETÀ COOPERATIVA SOCIALE - CIG: BAD56AB411 (OPP2026_A) - APPROVAZIONE SAL N. 7",
+   "categoria": "REGISTRO DELLE DETERMINE",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": false,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cernusco sul Naviglio",
+   "oggetto": "(CUP: G98E24000120004 CIG B940F1F6C5) PROCEDURA NEGOZIATA LAVORI DI ADEGUAMENTO DELLE STRUTTURE E DEGLI IMPIANTI AI FINI DELLA CERTIFICAZIONE ANTINCENDIO DELL'EDIFICIO \"CASA DELLE ARTI/AUDITORIUM\" DI VIA DE GASPERI A CERNUSCO SUL NAVIGLIO (MI) -APPROVAZIONE PERIZIA SUPPLETIVA E DI VARIANTE E AFFIDAMENTO DELL'ESECUZIONE DELLE MAGGIORI OPERE A ELCOTEM IMPIANTI S.R.L. DI MILANO (DETERMINE/2026/1380/16-11-2026)(UFFICIO URBANIZZAZIONI SECONDARIE - 137)",
+   "categoria": "DETERMINAZIONI",
+   "sottocategoria": "COMUNE DI CERNUSCO SUL NAVIGLIO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Rho",
+   "oggetto": "ACCORDO QUADRO PER RIFACIMENTO PAVIMENTAZIONI E MANUTENZIONE STRAORDINARIA STRADE – 24 MESI CON OPZIONE DI PROROGA PER ULTERIORI 24 MESI - CUP C47H26000820004 – PRESA D'ATTO PROGETTO. (GIUNTA/2026/202/10-11-2026)",
+   "categoria": "Delibere di Giunta",
+   "sottocategoria": "COMUNE DI RHO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Sesto San Giovanni",
+   "oggetto": "AFFIDAMENTO DIRETTO AI SENSI DELL'ART. 50, COMMA 1, LETT. A), DEL D.LGS. N. 36/2023 DEI LAVORI DI MANUTENZIONE STRAORDINARIA FINALIZZATI ALL'ADEGUAMENTO DELL'IMPIANTO ANTINCENDIO E ALL'AMPLIAMENTO DELL'IMPIANTO DI SEGNALAZIONE ORARIA/SONORO PRESSO IL PLESSO SCOLASTICO COMUNALE SCUOLA ELEMENTARE MARZABOTTO - AGGIUDICAZIONE IN FAVORE DI PORTOSOLE S.R.L. - CIG BD9EE7F7BF",
+   "categoria": "DETERMINAZIONI",
+   "sottocategoria": "SERVIZIO GLOBAL SERVICE E MANUTENZIONE STABILI - CABLATURA RETI INFORMATICHE E VIDEOSORVEGLIANZA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cerro al Lambro",
+   "oggetto": "INTERVENTO DI MESSA IN SICUREZZA DEL PERCORSO PEDONALE DEL PIEDIBUS MEDIANTE FORNITURA E POSA DI PARAPETTO IN LEGNO NELL'AREA DEL PARCHEGGIO DELLA SCUOLA PRIMARIA COMUNALE. AFFIDAMENTO DIRETTO ALLA SOCIETÀ SIGNAL GEST S.R.L. AI SENSI DELL'ART. 50, COMMA 1, LETT. B), DEL D.LGS. 36/2023",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "DETERMINAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Pieve Emanuele",
+   "oggetto": "PREVENTIVO P05Y5414 PER FORNTURA ENERGIA ELETTRICA PER NUOVO SERVIZO DI ALLACCIAMENTO IN BASSA TENSIONE IN VIA GIGLI 8, PER I LAVORI DI REALIZZAZIONE AMPLIAMENTO CENTRO DI FORMAZIONE PROFESSIONALE E CO WORKING NELL’AMBITO DEL PNRR – M5C2 INV. 2.3 – FINANZIATO DA NEXT GENERATION EU – PROGRAMMA INNOVATIVO NAZIONALE PER LA QUALITA’ DELL’ABITARE (PINQUA). CUP J47H21000220001 – CIG BB6C55DF79. LIQUIDAZIONE DELLA FATTURA NR. 202699903500212 DEL 25/09/2026 IN FAVORE DI DUERETI S.R.L. PER €17.593,14 IVA AL 22% INCLUSA.",
+   "categoria": "ATTI AMMINISTRATIVI",
+   "sottocategoria": "LIQUIDAZIONE",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Castano Primo",
+   "oggetto": "CONVENZIONE PER LA REALIZZAZIONE DELL’INTERVENTO DENOMINATO \"PROGETTO DI MANUTENZIONE STRAORDINARIA DELLA CASERMA DEI CARABINIERI NEL COMUNE DI CASTANO PRIMO\". APPROVAZIONE SCHEMA DI CONVENZIONE E AUTORIZZAZIONE ALLA SOTTOSCRIZIONE.",
+   "categoria": "ATTI",
+   "sottocategoria": "DELIBERE DI GIUNTA",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cassano d'Adda",
+   "oggetto": "ADOZIONE DELLA VARIANTE AL PIANO ATTUATIVO DENOMINATO \"AT2 - EX SCALO FERROVIARIO\" AI SENSI DEGLI ARTT. 14 E 93, COMMA 1-TER, LETTERA B), DELLA L.R. LOMBARDIA N. 12/2005 E S.M.I.",
+   "categoria": "ATTI",
+   "sottocategoria": "DELIBERE DI GIUNTA",
+   "tipo_al_momento_della_raccolta": "urbanistica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "urbanistica"
+  },
+  {
+   "comune": "Pioltello",
+   "oggetto": "ULTIMAZIONE DEI LAVORI. AVVISI AD OPPONENDUM - LAVORI DI POTENZIAMENTO DELLA STRADA PROVINCIALE N.103 - ANTICA DI CASSANO",
+   "categoria": "AVVISI",
+   "sottocategoria": "AVVISO PUBBLICO",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  },
+  {
+   "comune": "Cologno Monzese",
+   "oggetto": "APPROVAZIONE PREVENTIVO DELLA SOCIETÀ A2A ILLUMINAZIONE PUBBLICA S.R.L. PER LO SPOSTAMENTO DI N. 1 PALO DI ILLUMINAZIONE IN VIA G. BIRAGO IN COLOGNO MONZESE.",
+   "categoria": "",
+   "sottocategoria": "",
+   "tipo_al_momento_della_raccolta": "opera_pubblica",
+   "etichetta_rilevante": true,
+   "oggi_classificato": "opera_pubblica"
+  }
+ ]
+}

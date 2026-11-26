@@ -109,6 +109,9 @@ def raccogli(giorni, db_path=None, uscita=None):
     dal = dt.date.today() - dt.timedelta(days=giorni)
     db = A.apri(db_path or os.path.join(BASE, "dati", "radar.db"))
     uscita = uscita or os.path.join(BASE, "dati")
+    agg, sca = A.riclassifica(db, classifica, oggi)  # l'archivio segue sempre il classificatore piu' recente
+    if agg or sca:
+        print(f"Archivio ripassato col classificatore attuale: {agg} segnali aggiornati, {sca} scartati", flush=True)
     tot_letti = tot_utili = tot_nuovi = errori = 0
     for c in mappa():
         con = C.connettore(c.get("piattaforma", ""))
