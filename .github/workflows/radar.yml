@@ -42,6 +42,7 @@ jobs:
           git config user.email "radar-bot@users.noreply.github.com"
           git add dati/ mappa_albi.csv 2>/dev/null || git add dati/
           git diff --cached --quiet || git commit -m "giro $(date -u +%F)"
+          git pull --rebase -X theirs origin main   # se nel frattempo il codice e' stato aggiornato
           git push
       - name: Export del giorno come file scaricabile
         uses: actions/upload-artifact@v4
